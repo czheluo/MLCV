@@ -123,11 +123,11 @@
 						border-bottom: 0;
 
 						&:hover {
-							background-color: _palette(border-bg);
+							background-color: white;
 						}
 
 						&:active {
-							background-color: white;
+							background-color: _palette(border-bg-alt);
 						}
 					}
 				}
