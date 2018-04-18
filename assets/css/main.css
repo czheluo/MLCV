@@ -1244,7 +1244,7 @@ body.is-article-visible #bg:after {
 }
 
 body.is-loading #bg:before {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 /* Wrapper */
