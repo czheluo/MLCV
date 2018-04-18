@@ -1321,17 +1321,17 @@ body.is-loading #bg:before {
     opacity 0.325s ease-in-out;
   background-image: -moz-radial-gradient(
     rgb(5, 103, 110) 25%,
-    transparent 55%
+    transparent 100%
   );
   background-image: -webkit-radial-gradient(
     rgb(5, 103, 110) 25%,
-    transparent 55%
+    transparent 100%
   );
   background-image: -ms-radial-gradient(
    rgb(5, 103, 110) 25%,
-    transparent 55%
+    transparent 100%
   );
-  background-image: radial-gradient(rgb(5, 103, 110) 25%, transparent 55%);
+  background-image: radial-gradient(rgb(5, 103, 110) 25%, transparent 100%);
   max-width: 100%;
   text-align: center;
 }
