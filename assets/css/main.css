@@ -305,6 +305,7 @@ h6.major {
   padding:10px 20px
 }
 h2.major-header{
+      margin:0;
   background:coral;
   padding:15px;
   color:#000000;
