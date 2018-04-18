@@ -1677,7 +1677,7 @@ body.is-loading #header .content .inner {
 }
 
 #main article .close:active:before {
-  background-color: rgb(0, 0,0);
+  background-color: #000000;
 }
 
 @media screen and (max-width: 736px) {
