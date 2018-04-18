@@ -1,6 +1,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
-
+@import url(svg-icons.scss);
+@import url(menu.css);
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -25,7 +26,7 @@
 	body {
 		line-height: 1;
 	}
-
+ 
 	ol, ul {
 		list-style: none;
 	}
@@ -1075,7 +1076,7 @@
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(196, 206, 226, 0.5), rgba(198, 205, 219, 0.5)), url("../../images/overlay.png");
 			background-size: auto, 256px 256px;
 			background-position: center, center;
 			background-repeat: no-repeat, repeat;
@@ -1110,7 +1111,7 @@
 		}
 
 		body.is-loading #bg:before {
-			background-color: #000000;
+			background-color: #ecdfdf;
 		}
 
 /* Wrapper */
@@ -1187,10 +1188,10 @@
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+		background-image: -moz-radial-gradient(rgba(18, 150, 139, 0.25) 25%, transparent 55%);
+		background-image: -webkit-radial-gradient(rgba(18, 150, 139, 0.25) 25%, transparent 55%);
+		background-image: -ms-radial-gradient(rgba(18, 150, 139, 0.25) 25%, transparent 55%);
+		background-image: radial-gradient(rgba(18, 150, 139, 0.25) 25%, transparent 55%);
 		max-width: 100%;
 		text-align: center;
 	}
@@ -1212,7 +1213,7 @@
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #ffffff;
+				background: #0e0f0e;
 			}
 
 		#header > :first-child {
@@ -1227,7 +1228,7 @@
 			width: 5.5rem;
 			height: 5.5rem;
 			line-height: 5.5rem;
-			border: solid 1px #ffffff;
+			border: solid 1px #2b2a2a;
 			border-radius: 100%;
 		}
 
@@ -1237,7 +1238,7 @@
 
 		#header .content {
 			border-style: solid;
-			border-color: #ffffff;
+			border-color: #252222;
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
@@ -1276,13 +1277,13 @@
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
+			border: solid 1px #1f1b1b;
 			border-radius: 4px;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border-left: solid 1px #141313;
 			}
 
 				#header nav ul li:first-child {
@@ -1479,7 +1480,7 @@
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: rgba(182, 187, 190, 0.85);
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1525,11 +1526,11 @@
 				}
 
 				#main article .close:hover:before {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: rgba(22, 17, 17, 0.075);
 				}
 
 				#main article .close:active:before {
-					background-color: rgba(255, 255, 255, 0.175);
+					background-color: rgba(22, 17, 17, 0.175);
 				}
 
 		@media screen and (max-width: 736px) {
