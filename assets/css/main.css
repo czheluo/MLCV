@@ -1320,18 +1320,18 @@ body.is-loading #bg:before {
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out,
     opacity 0.325s ease-in-out;
   background-image: -moz-radial-gradient(
-    rgb(5, 103, 110) 25%,
+    rgb(252, 255, 255) 25%,
     transparent 100%
   );
   background-image: -webkit-radial-gradient(
-    rgb(5, 103, 110) 25%,
+    rgb(252, 255, 255) 25%,
     transparent 100%
   );
   background-image: -ms-radial-gradient(
-   rgb(5, 103, 110) 25%,
+   rgb(252, 255, 255) 25%,
     transparent 100%
   );
-  background-image: radial-gradient(rgb(5, 103, 110) 25%, transparent 100%);
+  background-image: radial-gradient(rgb(252, 255, 255) 25%, transparent 100%);
   max-width: 100%;
   text-align: center;
 }
