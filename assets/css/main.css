@@ -1623,7 +1623,7 @@ body.is-loading #header .content .inner {
   position: relative;
   width: 60rem;
   max-width: 100%;
-  background-color: rgba(27, 31, 34, 0.85);
+  background-color: rgb(255, 255, 255);
   border-radius: 4px;
   opacity: 0;
 }
