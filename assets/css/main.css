@@ -1203,10 +1203,10 @@ button {
   transition-delay: 0.75s;
   background-image: linear-gradient(
       to top,
-      rgba(95, 183, 228, 0.562),
-      rgba(95, 183, 228, 0.562),
+      rgba(235, 237, 241, 0.5),
+      rgba(235, 237, 241, 0.5),
     ),
-    url("../../images/overlay.png");
+    url("../../images/overlay1.png");
   background-size: auto, 256px 256px;
   background-position: center, center;
   background-repeat: no-repeat, repeat;
