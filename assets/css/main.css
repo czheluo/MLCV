@@ -1669,11 +1669,11 @@ body.is-loading #header .content .inner {
 }
 
 #main article .close:hover:before {
-  background-color: rgb(236, 11, 11);
+  background-color: rgb(240, 240, 240);
 }
 
 #main article .close:active:before {
-  background-color: rgb(236, 11, 11);
+  background-color: rgb(240, 240, 240);
 }
 
 @media screen and (max-width: 736px) {
