@@ -301,6 +301,8 @@ h6.major {
   width: max-content;
   padding-bottom: 0.5rem;
   margin: 0 0 2rem 0;
+  background:#33cccc
+  padding:10px 20px
 }
 
 h1 {
