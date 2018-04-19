@@ -1786,14 +1786,14 @@ body.is-loading #footer {
     left:0;
   }
 }
-.slider{
+#slider{
   overflow: hidden ;
 }
-.slider figure img{
+#slider figure img{
   float: left;
   width:20%;
 }
-.slider{
+#slider{
   position:relative;
   width:500%;
   animation:silde 5s infinite;
