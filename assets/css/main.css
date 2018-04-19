@@ -223,7 +223,7 @@ body,
 input,
 select,
 textarea {
-  color: #ffffff;
+  color: #000000;
   font-family: "Times New Roman", Times, serif;
   font-weight: 300;
   font-size: 1rem;
@@ -466,7 +466,7 @@ form > .actions {
 }
 
 label {
-  color: #ffffff;
+  color: #000000;
   display: block;
   font-size: 0.8rem;
   font-weight: 300;
