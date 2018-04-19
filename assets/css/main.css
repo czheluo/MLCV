@@ -1721,7 +1721,7 @@ body.is-loading #header .content .inner {
     opacity 0.325s ease-in-out;
   width: 100%;
   max-width: 100%;
-  margin-top: 4rem;
+  margin-top: 6rem;
   text-align: center;
   position: relative;
 }
