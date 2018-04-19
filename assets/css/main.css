@@ -1280,6 +1280,7 @@ body.is-loading #bg:before {
   min-height: 100vh;
   width: 100%;
   padding: 4rem 2rem;
+  padding-bottom: 3rem;
   z-index: 3;
 }
 
@@ -1721,7 +1722,7 @@ body.is-loading #header .content .inner {
     opacity 0.325s ease-in-out;
   width: 100%;
   max-width: 100%;
-  margin-top: 5.5rem;
+  margin-top: 6rem;
   text-align: center;
   position: relative;
 }
