@@ -7,7 +7,35 @@
 	<article id="About">
 		<h2 class="major-header">About Me</h2>
 		<span class="image main">
-			<img src="images/pic02.jpg" alt="" />
+			<script>
+						var i = 0; // Start point
+						var images = [];
+						var time = 1000;
+					
+						// Image List
+						images[0] = 'pic01.jpg';
+						images[1] = 'pic02.jpg';
+						/*images[2] = 'image3.jpg';
+						images[3] = 'image4.jpg';*/
+					
+						// Change Image
+						function changeImg(){
+							document.slide.src = images[i];
+					
+							if(i < images.length - 1){
+								i++;
+							} else {
+								i = 0;
+							}
+					
+							setTimeout("changeImg()", time);
+						}
+					
+						window.onload = changeImg;
+					
+					</script>
+					<img name="slide" width="960" height="320">
+			<!--img src="images/pic02.jpg" alt="" /-->
 		</span>
 		<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis,
 			nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus
