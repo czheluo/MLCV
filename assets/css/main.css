@@ -1682,11 +1682,11 @@ body.is-loading #header .content .inner {
 }
 
 #main article .close:hover:before {
-  background-color: #33cccc;
+  background-color: #000000;
 }
 
 #main article .close:active:before {
-  background-color: #000000;
+  background-color: #33cccc;
 }
 
 @media screen and (max-width: 736px) {
