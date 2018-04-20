@@ -407,7 +407,7 @@
 	});
 
 })(jQuery);
-/*var slideIndex = 0;
+var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -424,8 +424,9 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 2 seconds
-}*/
+    setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+
 /*var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -456,7 +457,7 @@ function showSlides(n) {
   
   setTimeout(showSlides, 8000); // Change image every 2 seconds
 }*/
-var slideIndex = 1;
+/*var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
@@ -481,4 +482,4 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-}
+}*/
