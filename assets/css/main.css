@@ -801,7 +801,7 @@ input[type="radio"] + label:before {
   margin: 2.5rem 0;
   /*max-width: 100%;
   max-height: 100%;*/
-       width:60%;
+       width:100%;
 }
 
 .image.main img {
@@ -1880,9 +1880,11 @@ body.is-loading #footer {
   overflow:visible;clip:auto;white-space:normal}
 
 /* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
+body {font-family: Verdana, sans-serif; margin:0}*/
 .mySlides {display: none}
-img {vertical-align: middle;}*/
+img {
+	width:80%;
+	vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
