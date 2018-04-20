@@ -1892,6 +1892,9 @@ img {
   position: relative;
   margin: auto;
 }
+.slideshow-container div{
+  text-align:center;
+}
 
 /* Next & previous buttons */
 .prev, .next {
