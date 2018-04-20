@@ -1754,7 +1754,7 @@ body.is-loading #footer {
 }
 
 
-@keyframes slide{
+/*@keyframes slide{
   0%{
     left:0;
   }
@@ -1800,7 +1800,7 @@ body.is-loading #footer {
   position:relative;
   width:500%;
   animation:silde 5s infinite;
-}
+}*/
 .carousel{position:relative}
 .carousel-inner{
   position:relative;width:100%;overflow:hidden}
