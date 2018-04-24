@@ -51,12 +51,6 @@ permalink: /:year/:month/:day/:title/
 markdown: kramdown
 highlighter: rouge
 
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-
 #gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
 #exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 #social:
@@ -99,13 +93,6 @@ kramdown:
   #forumbee:
   #tripadvisor:
   #amazon:
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
 # Plugins
 gems:
   - jekyll-paginate
@@ -127,29 +114,7 @@ include:
   - .htaccess
   - _pages
 
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - Rakefile
-  - README
-  - tmp
+
 
 # Outputting
 # permalink: /:categories/:title/
