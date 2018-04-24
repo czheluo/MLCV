@@ -1,7 +1,6 @@
 # Site settings
 title:"Meng Luo"
 description: "BIOSTATISTICS, STATISTICS GENOMICS, BIOINFORMATICS"
-
 url: "https://github.com/mengluoML/mengluoCV" # the base hostname & protocol for your site
 #owner: Meng Luo # or company name
 #first_published: 2016 # if migrating another site, the year of your first publish
@@ -103,7 +102,7 @@ gems:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+  - jekyll-compose
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -111,7 +110,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-compose
+
 # Reading Files
 include:
   - .htaccess
