@@ -29,9 +29,9 @@ defaults:
   -
     scope:
       path: ''
-      type: 'posts'
+      type: "posts"
     values:
-        layout: 'post'
+        layout: "post"
 
 
 #defaults:
@@ -58,7 +58,7 @@ kramdown:
   hard_wrap: false
 
 #gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+#exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 #social:
  # twitter: https://twitter.com/czheluo
   #github: https://github.com/mengluoML
