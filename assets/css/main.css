@@ -60,6 +60,7 @@ center,
 dl,
 dt,
 dd,
+ol,
 ul,
 li,
 fieldset,
@@ -123,7 +124,7 @@ body {
   line-height: 1;
 }
 
-/*ol,*/
+ol,
 ul {
   list-style: none;
 }
@@ -829,7 +830,7 @@ input[type="radio"] + label:before {
 
 /* List */
 
-/*ol {
+ol {
   list-style: decimal;
   margin: 0 0 2rem 0;
   padding-left: 1.25em;
@@ -837,7 +838,7 @@ input[type="radio"] + label:before {
 
 ol li {
   padding-left: 0.25em;
-}*/
+}
 
 ul {
   list-style: disc;
