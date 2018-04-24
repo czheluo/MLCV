@@ -2,9 +2,9 @@
 Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
 <!--hr class="post-list__divider"-->
 
-<div class="main-post-list">
+<!--div class="main-post-list"-->
 
-    <ol class="post-list">
+    <!--ol class="post-list"-->
 	{% for post in paginator.posts %}
 	<li>
             <div class="post-list__meta">
@@ -37,7 +37,7 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
         <hr class="post-list__divider">
 	</li>
 	{% endfor %}
-    </ol>
+    <!--/ol-->
 
     <!--hr class="post-list__divider"-->
 
@@ -45,4 +45,4 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
     {% include pagination.html %}
     {% endif %}
 
-</div>
+<!--/div-->
