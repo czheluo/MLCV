@@ -2,12 +2,12 @@
 #
 # 
 # Site settings
-title: CHENZHE LUO
+title: Meng Luo
 description: "BIOSTATISTICS，STATISTICS GENOMICS，BIOINFORMATICS"
-owner: MENG LUO # or company name
+owner: Meng Luo # or company name
 #first_published: 2016 # if migrating another site, the year of your first publish
 email: czheluo@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: '' # the subpath of your site, e.g. /blog
 url: "https://github.com/mengluoML/mengluoCV" # the base hostname & protocol for your site
 excerpt_link: "Continue reading &#8230;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
@@ -31,7 +31,7 @@ defaults:
 # Build settings
 destination: _site
 paginate: 10
-permalink: /blog/:year/:month/:day/:title/
+permalink: /Blog/:year/:month/:day/:title/
 markdown: kramdown
 highlighter: rouge
 
