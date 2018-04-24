@@ -12,6 +12,36 @@ url: "https://github.com/mengluoML/mengluoCV" # the base hostname & protocol for
 excerpt_link: "Continue reading &#8230;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
 #titlecase: true       # Converts page and post titles to titlecase
+author:
+  name: 'Meng Luo'
+  email: czheluo@gmail.com
+  github_username: mengluoML
+  linkedin_username: Chenzhe Luo
+  twitter_username: czheluo
+  ig_username: czheluo
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /blog/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
 social:
   twitter: https://twitter.com/czheluo
   github: https://github.com/mengluoML
@@ -98,13 +128,6 @@ exclude:
   - README
   - tmp
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
 # Outputting
 # permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
@@ -114,46 +137,17 @@ tag_archive:
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 #sass:
 #  style: compressed
 
-defaults:
+#defaults:
   # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-author:
-  name: 'Meng Luo'
-  email: czheluo@gmail.com
-  github_username: mengluoML
-  linkedin_username: Chenzhe Luo
-  twitter_username: czheluo
-  ig_username: czheluo
+  #- scope:
+     # path: ""
+      #type: posts
+    #values:
+     # layout: single
+     # author_profile: true
+     # read_time: true
 
-defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
-    values:
-        layout: 'post'
-
-# Build settings
-destination: _site
-paginate: 10
-permalink: /blog/:year/:month/:day/:title/
-markdown: kramdown
-highlighter: rouge
-
-kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
-
-gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
