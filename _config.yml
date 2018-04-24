@@ -1,5 +1,5 @@
 # Site settings
-title: "Meng Luo"
+title:"Meng Luo"
 description: "BIOSTATISTICS，STATISTICS GENOMICS，BIOINFORMATICS"
 url: "https://github.com/mengluoML/mengluoCV" # the base hostname & protocol for your site
 #owner: Meng Luo # or company name
@@ -89,8 +89,14 @@ exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
   #tripadvisor:
   #amazon:
 
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
 # Plugins
-#gems:
+gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
