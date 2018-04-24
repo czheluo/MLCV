@@ -4,7 +4,7 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
 
 <!--div class="main-post-list"-->
 
-    <!--ol class="post-list"-->
+    <!--ol class="post-list">
 	{% for post in paginator.posts %}
 	<li>
             <div class="post-list__meta">
@@ -37,7 +37,17 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
         <hr class="post-list__divider">
 	</li>
 	{% endfor %}
-    <!--/ol-->
+    </ol-->
+     <h1>Blog</h1>
+	<ul>
+		{% for blog in site.posts}
+		<li>
+           <a href="http://">{{blog.title}}</a>
+		</li>
+            {% endfor %} 
+
+	</ul>
+
 
     <!--hr class="post-list__divider"-->
 
