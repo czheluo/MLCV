@@ -1,6 +1,6 @@
 
 Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
-<hr class="post-list__divider">
+<!--hr class="post-list__divider"-->
 
 <div class="main-post-list">
 
@@ -34,12 +34,12 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
 		<a href="{{ site.baseurl }}{{ post.url }}">{{ site.excerpt_link }}</a>
         </class>
 
-        <hr class="post-list__divider">
+        <!--hr class="post-list__divider"-->
 	</li>
 	{% endfor %}
     </ol>
 
-    <hr class="post-list__divider">
+    <!--hr class="post-list__divider"-->
 
     {% if paginator.previous_page or paginator.next_page %}
     {% include pagination.html %}
