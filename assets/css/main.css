@@ -1980,3 +1980,34 @@ img {vertical-align: middle;}
 	border-top: 1px solid rgba(0, 0, 0, 0.14);
  }
 
+@import url(uno.css);
+@import url(theme-son-of-obsidian.css);
+@import url(svg-icons.css);
+
+/* Modifications */
+
+pre.highlight,
+.highlight pre {
+  padding: 10px;
+}
+
+pre.highlight code,
+.highlight pre code {
+  white-space: pre-wrap;
+}
+
+.pre-with-code {
+    white-space: pre-wrap;
+    background: hsl(30,80%,90%);
+}
+
+.navigation__item span {
+    background-color: transparent;
+    border: 1px solid #999;
+}
+ 
+.btn,
+.navigation__item a {
+  margin: 2px 0;
+  white-space: nowrap;
+}
