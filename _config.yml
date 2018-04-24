@@ -25,23 +25,24 @@ author:
   twitter_username: czheluo
   #ig_username: czheluo
 
-#defaults:
- # -
-  #  scope:
-   #   path: ''
-    #  type: 'posts'
-    #values:
-     #   layout: 'post'
-
 defaults:
-  # _posts
-  - scope:
+  -
+    scope:
       path: ''
-      type: posts
+      type: 'posts'
     values:
-      layout: 'post'
-      author_profile: true
-      read_time: true
+        layout: 'post'
+
+
+#defaults:
+  # _posts
+  #- scope:
+     # path: ''
+     # type: posts
+   # values:
+     # layout: 'post'
+     # author_profile: true
+     # read_time: true
 
 # Build settings
 destination: _site
