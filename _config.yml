@@ -1,7 +1,8 @@
-title: Meng Luo
+# Site settings
+title: Jean Fan
 description: "BIOSTATISTICS，STATISTICS GENOMICS，BIOINFORMATICS"
 url: "https://github.com/mengluoML/mengluoCV" # the base hostname & protocol for your site
-owner: Meng Luo # or company name
+#owner: Meng Luo # or company name
 #first_published: 2016 # if migrating another site, the year of your first publish
 #email: czheluo@gmail.com
 baseurl: '' # the subpath of your site, e.g. /blog
