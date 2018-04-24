@@ -4,11 +4,19 @@
 # Site settings
 title: Meng Luo
 description: "BIOSTATISTICS，STATISTICS GENOMICS，BIOINFORMATICS"
-owner: Meng Luo # or company name
-#first_published: 2016 # if migrating another site, the year of your first publish
-email: czheluo@gmail.com
-baseurl: '' # the subpath of your site, e.g. /blog
 url: "https://github.com/mengluoML/mengluoCV" # the base hostname & protocol for your site
+#owner: Meng Luo # or company name
+#first_published: 2016 # if migrating another site, the year of your first publish
+#email: czheluo@gmail.com
+baseurl: '' # the subpath of your site, e.g. /blog
+google_analytics: 'UA-118066800-1'
+disqus_shortname: 'MengLuo'
+simple_search: https://www.google.com/search
+subscribe_rss: /feed.xml
+excerpt_link: "Continue reading &#8230;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_separator: "<!--more-->"
+#titlecase: true       # Converts page and post titles to titlecase
+
 excerpt_link: "Continue reading &#8230;"  # "Continue reading" link text at the bottom of excerpted articles
 excerpt_separator: "<!--more-->"
 #titlecase: true       # Converts page and post titles to titlecase
@@ -41,10 +49,11 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
-social:
-  twitter: https://twitter.com/czheluo
-  github: https://github.com/mengluoML
+#gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+#social:
+ # twitter: https://twitter.com/czheluo
+  #github: https://github.com/mengluoML
   # linkedin-square: https://linkedin.com/in/<username>
   # facebook-official: https://facebook.com/<username>
   # google-plus-square: https://plus.google.com/u/0/+<username>
@@ -84,7 +93,7 @@ social:
   #amazon:
 
 # Plugins
-gems:
+#gems:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
@@ -98,7 +107,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
+  - jekyll-compose
 # Reading Files
 include:
   - .htaccess
