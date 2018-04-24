@@ -8,7 +8,10 @@ owner: MENG LUO # or company name
 #first_published: 2016 # if migrating another site, the year of your first publish
 email: czheluo@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mengluoml.github.io" # the base hostname & protocol for your site
+url: "https://github.com/mengluoML/mengluoCV" # the base hostname & protocol for your site
+excerpt_link: "Continue reading &#8230;"  # "Continue reading" link text at the bottom of excerpted articles
+excerpt_separator: "<!--more-->"
+#titlecase: true       # Converts page and post titles to titlecase
 social:
   twitter: https://twitter.com/czheluo
   github: https://github.com/mengluoML
@@ -124,3 +127,33 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+author:
+  name: 'Meng Luo'
+  email: czheluo@gmail.com
+  github_username: mengluoML
+  linkedin_username: Chenzhe Luo
+  twitter_username: czheluo
+  ig_username: czheluo
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /blog/:year/:month/:day/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
