@@ -50,7 +50,11 @@ paginate: 10
 permalink: /Blog/:year/:month/:day/:title/
 markdown: kramdown
 highlighter: rouge
-
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
 #gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
 #exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 #social:
@@ -113,6 +117,7 @@ whitelist:
 include:
   - .htaccess
   - _pages
+  - _posts
 
 
 
