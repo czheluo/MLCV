@@ -222,7 +222,10 @@
 		<!--span class="image main">
 			<img src="images/pic02.jpg" alt="" />
 		</span-->
-		{% include blog_lm.html %}
+		<!-->{% include blog_lm.html %}<-->
+		{% for post in site.posts%}
+		<p>{{post.content}}</p>
+		{% endfor %}
 		<br>
 		<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat.</p>
 		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet rhoncus amet feugiat tempus.</p>
