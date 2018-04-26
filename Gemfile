@@ -5,3 +5,4 @@ group :jekyll_plugins do
     gem 'jekyll-compose'
     gem 'jemoji'
 end
+gem 'jekyll-font-awesome-sass'
