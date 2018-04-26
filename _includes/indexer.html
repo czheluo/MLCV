@@ -28,7 +28,7 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
 		</a>
             </h2>
 
-            <p class="excerpt" style="text-align:justify;">{{ post.excerpt | strip_html | truncatewords:75}}</p>
+            <p class="excerpt" style="text-align:justify;">{{ post.excerpt | strip_html | truncatewords:100}}</p>
 	    <br>
             <span class="excerpt">
 		<a href="{{ site.baseurl }}{{ post.url }}">{{ site.excerpt_link }}</a>
