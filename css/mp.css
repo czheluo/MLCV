@@ -2,6 +2,8 @@
 @import url(uno.css);
 @import url(theme-son-of-obsidian.css);
 @import url(svg-icons.css);
+@import url(font-awesome.min.css);
+@import url(monokai.css);
 /* Modifications */
 
 pre.highlight,
