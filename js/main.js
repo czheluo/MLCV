@@ -496,11 +496,11 @@ $(document).ready(function () {
     }
   })
 
-  if (window.location.hash && window.location.hash == '#blog') {
+  if (window.location.hash && window.location.hash == '#Blog') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
-  if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/index.html') {
+  if (window.location.pathname !== '{{ site.baseurl }}/' && window.location.pathname !== '{{ site.baseurl }}/indexxer.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
 
