@@ -1,9 +1,9 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 @import url(svg-icons.css);
-@import url(menu.css);
-@import url(uno.css);
-@import url(theme-son-of-obsidian.css);
+/*@import url(menu.css);*/
+/*@import url(uno.css);*/
+/*@import url(theme-son-of-obsidian.css);*/
 /*@import url(svg-icons.css);*/
 
 /*
@@ -323,7 +323,7 @@ h1 {
 h2 {
   font-size: 1.5rem;
   line-height: 1.4;
-  letter-spacing: 0;
+  letter-spacing: 0.5rem;
 }
 
 h3 {
@@ -1477,7 +1477,7 @@ body.is-loading #bg:before {
   line-height: 2.75rem;
   padding: 0 1.25rem 0 1.45rem;
   text-transform: none;
-  letter-spacing: 0;
+  letter-spacing: 0.2rem;
   font-size: 0.8rem;
   border-bottom: 0;
 }
