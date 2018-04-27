@@ -1237,7 +1237,7 @@ button {
       rgba(235, 237, 241, 0.5),
       rgba(235, 237, 241, 0.5),
     ),
-    url("../../images/overlay1.png");
+    url("../../images/map.jpg");
   background-size: auto, 256px 256px;
   background-position: center, center;
   background-repeat: no-repeat, repeat;
@@ -1256,7 +1256,7 @@ button {
   -ms-transition: -ms-transform 0.325s ease-in-out,
     -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-  background-image: url("../../images/bg.jpg");
+  background-image: url("../../images/map.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
