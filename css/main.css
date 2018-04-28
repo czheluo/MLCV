@@ -1240,7 +1240,7 @@ button {
   background-image: url("../../images/bgr.jpg");
   background-repeat: no-repeat; /*, repeat;*/
   background-size: cover; /*auto, 256px 256px;*/
-  background-position: center;
+  /*background-position: center;*/
   z-index: 2;
 }
 
@@ -1257,7 +1257,7 @@ button {
     -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
   background-image: url("../../images/bgr.jpg");
-  background-position: center;
+  /*background-position: center;*/
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
