@@ -96,6 +96,8 @@ exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
   #tripadvisor:
   #amazon:
 # Plugins
+jekyll-mentions:
+  target: blank
 #gems:
 #  - jekyll-paginate
 #  - jekyll-sitemap
