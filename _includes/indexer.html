@@ -23,7 +23,7 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
 		</span>
             </div>
             <h2 class="post-list__post-title post-title">
-		<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" style="letter-space=0;">
+		<a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}" target="_blank" style="letter-space=0;">
 		    {{ post.title }} 
 		</a>
             </h2>
@@ -31,7 +31,7 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
             <p class="excerpt" style="text-align:justify;">{{ post.excerpt | strip_html | truncatewords:100}}</p>
 	    <br>
             <span class="excerpt">
-		<a href="{{ site.baseurl }}{{ post.url }}">{{ site.excerpt_link }}</a>
+		<a href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{ site.excerpt_link }}</a>
         </class>
 
         <hr class="post-list__divider">
