@@ -1907,6 +1907,14 @@ img {vertical-align: middle;}
 .slideshow-container div{
  text-align:center;
 }
+.slideshow-container1 {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container1 div{
+ text-align:center;
+}
 /* Caption text */
 .text {
   color: #14a6d3;
