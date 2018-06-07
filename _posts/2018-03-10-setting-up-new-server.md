@@ -6,7 +6,7 @@ tags: [notes, lists, bash]
 
 # Setting up on a new server
 
-I recently started my post-doctoral fellowship in a new lab. And this means getting set up on a new server! Here's a step-by-step reminder to myself of what to do when I inevitably need to do this again.
+Getting set up on a new server! Here's a step-by-step reminder to myself of what to do when I inevitably need to do this again.
 
 ### 1. Avoid typing out long logins by editing your `~/.ssh/config`
 
