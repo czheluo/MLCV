@@ -6,7 +6,7 @@ tags: [Lab, Statistics, Course, Blogs]
 
 # What i have learned from.
 
-As following are what I have learned from the website in biostatistics, bioinformatics and others research areas (Blogs).
+As following were what I have learned from the website in biostatistics, bioinformatics and others research areas (Blogs).
 ### Statistical Genetics
 1. [Abecasis-Lab](https://genome.sph.umich.edu/wiki/Abecasis_Lab).
 2. [Center for Statistical Genetics](https://statgen.research.bcm.edu/index.php/Main_Page).
