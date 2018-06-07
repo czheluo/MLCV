@@ -10,10 +10,11 @@ As following are what I have learned from the website in biostatistics, bioinfor
 ###Statistical Genetics
 [Abecasis-Lab](https://genome.sph.umich.edu/wiki/Abecasis_Lab).
 [Center for Statistical Genetics](https://statgen.research.bcm.edu/index.php/Main_Page).
-[Point of significant](https://www.nature.com/collections/qghhqm/pointsofsignificance)
-[23rd Summer Institute in Statistical Genetics (SISG2017)](https://www.biostat.washington.edu/suminst/sisg)
-[4th Annual Summer Institute in Statistics for Big Data (SISBID)](https://www.biostat.washington.edu/suminst/sisbid)
-[SISG Brisbane 2017](http://cnsgenomics.com/sisg/modules.html)
+[Point of significant](https://www.nature.com/collections/qghhqm/pointsofsignificance).
+[23rd Summer Institute in Statistical Genetics (SISG2017)](https://www.biostat.washington.edu/suminst/sisg).
+[4th Annual Summer Institute in Statistics for Big Data (SISBID)](https://www.biostat.washington.edu/suminst/sisbid).
+[SISG Brisbane 2017](http://cnsgenomics.com/sisg/modules.html).
+
 
 ###Bioinformatics:
 [Biostar Handbook](https://biostar.myshopify.com/).
