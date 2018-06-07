@@ -4,10 +4,10 @@ comments: true
 tags: [Lab, Statistics, Course, Blogs]
 ---
 
-#What i have learned from.
+# What i have learned from.
 
 As following are what I have learned from the website in biostatistics, bioinformatics and others research areas (Blogs).
-###Statistical Genetics
+### Statistical Genetics
 [Abecasis-Lab](https://genome.sph.umich.edu/wiki/Abecasis_Lab).
 [Center for Statistical Genetics](https://statgen.research.bcm.edu/index.php/Main_Page).
 [Point of significant](https://www.nature.com/collections/qghhqm/pointsofsignificance).
@@ -16,19 +16,19 @@ As following are what I have learned from the website in biostatistics, bioinfor
 [SISG Brisbane 2017](http://cnsgenomics.com/sisg/modules.html).
 
 
-###Bioinformatics:
+### Bioinformatics:
 [Biostar Handbook](https://biostar.myshopify.com/).
 [Bioinformatics and Genome Analyses Courses.](https://webext.pasteur.fr/tekaia/BGA_courses.html)
 [Canadian Bioinformatics Workshops](https://bioinformaticsdotca.github.io/).
 [UCLA Bioinformatics](https://bioinformatics.ucla.edu/).
 [Bioinformatics Training](https://training.csx.cam.ac.uk/bioinformatics/search?offset=0&limit=10&course_date_facet_shown=true&scheduled=on).
 
-###Others
+### Others
 [HIVE PLOTS](http://www.hiveplot.net/).
 [Circos](http://circos.ca/).
 [GWAS Catalog](http://www.ebi.ac.uk/gwas/).
 
-###Labs
+### Labs
 [Program in Complex Trait Genomics](http://cnsgenomics.com/).
 [ZarLab](http://zarlab.cs.ucla.edu/).
 [Purcell lab](http://zzz.bwh.harvard.edu/index.html).
@@ -42,7 +42,7 @@ As following are what I have learned from the website in biostatistics, bioinfor
 [Harvard T.H. Chan School of Public Health/ Department of Biostatistics](https://www.hsph.harvard.edu/biostatistics/).
 [Ritchie Lab](https://ritchielab.org/).
 
-###Blogs
+### Blogs
 [BROAD INSTITUTE](https://www.broadinstitute.org/news?type=blog).
 [JEFworks](http://jef.works/blog/).
 [Goolge AI blog](https://ai.googleblog.com/).
@@ -54,6 +54,6 @@ As following are what I have learned from the website in biostatistics, bioinfor
 [Deep Learning Blog](https://blogs.technet.microsoft.com/machinelearning/tag/deep-learning/).
 [WES BOS Blog](https://wesbos.com/blog/).
 
-###Tools
+### Tools
 [Bioconductor](http://www.bioconductor.org/).
 [Github](https://github.com/).
