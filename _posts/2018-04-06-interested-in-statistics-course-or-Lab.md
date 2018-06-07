@@ -8,7 +8,7 @@ tags: [Lab, Statistical, Bioinformatics, Courses, Blogs]
 
 As following were what I have learned from the website in biostatistics, bioinformatics and others research areas (Blogs).
 ### Statistical Genetics
-1. [Abecasis-Lab](https://genome.sph.umich.edu/wiki/Abecasis_Lab).
+* [Abecasis-Lab](https://genome.sph.umich.edu/wiki/Abecasis_Lab).
 2. [Center for Statistical Genetics](https://statgen.research.bcm.edu/index.php/Main_Page).
 3. [Point of significant](https://www.nature.com/collections/qghhqm/pointsofsignificance).
 4. [23rd Summer Institute in Statistical Genetics (SISG2017)](https://www.biostat.washington.edu/suminst/sisg).
