@@ -123,7 +123,11 @@ section {
 body {
   line-height: 1;
 }
-
+.btn span.icon {
+    background: url("../../images/speakerdeck.png") no-repeat;
+    float: left;
+ padding:10px 16px;
+}
 ol,
 ul {
   list-style: none;
