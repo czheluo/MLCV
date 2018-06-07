@@ -8,17 +8,17 @@ tags: [Lab, Statistics, Course, Blogs]
 
 As following are what I have learned from the website in biostatistics, bioinformatics and others research areas (Blogs).
 ### Statistical Genetics
-⋅⋅*[Abecasis-Lab](https://genome.sph.umich.edu/wiki/Abecasis_Lab).
-⋅⋅*[Center for Statistical Genetics](https://statgen.research.bcm.edu/index.php/Main_Page).
-⋅⋅*[Point of significant](https://www.nature.com/collections/qghhqm/pointsofsignificance).
-⋅⋅*[23rd Summer Institute in Statistical Genetics (SISG2017)](https://www.biostat.washington.edu/suminst/sisg).
-⋅⋅*[4th Annual Summer Institute in Statistics for Big Data (SISBID)](https://www.biostat.washington.edu/suminst/sisbid).
-⋅⋅*[SISG Brisbane 2017](http://cnsgenomics.com/sisg/modules.html).
+⋅⋅* [Abecasis-Lab](https://genome.sph.umich.edu/wiki/Abecasis_Lab).
+⋅⋅* [Center for Statistical Genetics](https://statgen.research.bcm.edu/index.php/Main_Page).
+⋅⋅* [Point of significant](https://www.nature.com/collections/qghhqm/pointsofsignificance).
+⋅⋅* [23rd Summer Institute in Statistical Genetics (SISG2017)](https://www.biostat.washington.edu/suminst/sisg).
+⋅⋅* [4th Annual Summer Institute in Statistics for Big Data (SISBID)](https://www.biostat.washington.edu/suminst/sisbid).
+⋅⋅* [SISG Brisbane 2017](http://cnsgenomics.com/sisg/modules.html).
 
 
 ### Bioinformatics:
-[Biostar Handbook](https://biostar.myshopify.com/).
-[Bioinformatics and Genome Analyses Courses.](https://webext.pasteur.fr/tekaia/BGA_courses.html)
+⋅⋅* [Biostar Handbook](https://biostar.myshopify.com/).
+⋅⋅* [Bioinformatics and Genome Analyses Courses.](https://webext.pasteur.fr/tekaia/BGA_courses.html)
 [Canadian Bioinformatics Workshops](https://bioinformaticsdotca.github.io/).
 [UCLA Bioinformatics](https://bioinformatics.ucla.edu/).
 [Bioinformatics Training](https://training.csx.cam.ac.uk/bioinformatics/search?offset=0&limit=10&course_date_facet_shown=true&scheduled=on).
