@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-tags: [Lab, Statistics, Course, Blogs]
+tags: [Lab, Statistical, Bioinformatics, Courses, Blogs]
 ---
 
 # What i have learned from.
