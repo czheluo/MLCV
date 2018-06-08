@@ -183,6 +183,6 @@ set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
  
 #### If you have any question for our model, and Found any omission (bug) . Please feel free to contact me
 
-[Chenzhe Luo](czheluo@gmail.com)
+[Chenzhe Luo](https://github.com/mengluoML)
 
 
