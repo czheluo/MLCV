@@ -1,6 +1,8 @@
 ---
 layout: post
+comments: true
 output: html_document
+category: [BMD_man,BMD_qq]
 tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 ---
 
