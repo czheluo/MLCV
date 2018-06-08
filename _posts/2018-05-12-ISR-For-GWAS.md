@@ -41,7 +41,7 @@ tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 <div align="center"><img src="{{ "/images/Blog/GWAS/HUAMNPVE.jpg" | prepend: site.baseurl }}"></div>
 
 
-#Real dataset
+# Real dataset
 
 ## Manhattan plot
 Here is the matlab code for BMD GWAS Manhattan plot.
