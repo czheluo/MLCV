@@ -118,7 +118,7 @@ for j=1:1:(phe-2)
 end
 ```
 
-<div align="center"><img src="{{ "/images/Blog/GWAS/bmdman.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/GWAS/bmdman.png" | prepend: site.baseurl }}"></div>
 
 # QQ plot
 
@@ -169,6 +169,6 @@ lg=legend('ISR','95% CI');
 set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
 ```
 
-<div align="center"><img src="{{ "/images/Blog/GWAS/bmdqq.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/GWAS/bmdqq.png" | prepend: site.baseurl }}"></div>
 
 
