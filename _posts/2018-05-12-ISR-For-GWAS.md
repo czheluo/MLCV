@@ -43,6 +43,8 @@ tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 #Real dataset
 
 ## Manhattan plot
+Here is the matlab code for BMD GWAS Manhattan plot.
+
 ```matlab
 load manha.mat
 [nsnp,phe]=size(mlssr);nchr=length(unique(chr));
@@ -122,7 +124,6 @@ for j=1:1:(phe-2)
  text(xg(19),-log10(0.05/nsnp),num2str(5.39E-07))
 end
 ```
-Here is the matlab code for BMD GWAS Manhattan plot.
 
 <div align="center"><img src="{{ "images/Blog/GWAS/bmdman.jpg" | prepend: site.baseurl }}"></div>
 
