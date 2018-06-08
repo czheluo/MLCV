@@ -177,7 +177,7 @@ set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bmdqq.png" | prepend: site.baseurl }}"></div>
 
-# Calculated time
+## Calculated time
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bar_time.jpg" | prepend: site.baseurl }}"></div>
  
