@@ -16,6 +16,8 @@ Here we introduce a new unique variable selection procedure of regression statis
 
 Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) included two real human genotype datasets, the first dataset included 1000 samples and 100000 makers (SNPs) over all chromosomes. The second included 10000 samples(6000 cases and 4000 control) and 88058 markers (SNPs), and only included in 19, 20, 21, and 22 chromosomes. Also, another outbred [CFW](https://datadryad.org/resource/doi:10.5061/dryad.2rs41) (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to perform one simulation experiments. well, all simulation both setting the heritability was 0.5.
 
+
+
 # Power versus FDR and TPR (Type one error)
 
 ## Mice simulation result
@@ -28,7 +30,11 @@ Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) in
 
 ## Estimated Effect (PVE)
 
+### Mice
+
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
+
+### Human
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/HUMANPVE.jpg" | prepend: site.baseurl }}"></div>
 
@@ -175,3 +181,8 @@ set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bar_time.jpg" | prepend: site.baseurl }}"></div>
  
+#### If you have any question for our model, and Found any omission (bug) . Please feel free to contact me
+
+[Chenzhe Luo](czheluo@gmail.com)
+
+
