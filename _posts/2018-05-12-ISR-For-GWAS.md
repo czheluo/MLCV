@@ -1,6 +1,5 @@
 ---
 layout: post
-comments: true
 tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 ---
 
