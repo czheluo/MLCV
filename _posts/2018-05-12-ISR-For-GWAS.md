@@ -26,7 +26,7 @@ Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) in
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/humanpower.jpg" | prepend: site.baseurl }}"></div>
 
-# Estimated Effect (PVE)
+## Estimated Effect (PVE)
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
 
