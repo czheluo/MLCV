@@ -20,7 +20,7 @@ Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) in
 
 ## Mice simulation result
 
-<div align="center"><img src="{{ "/images/Blog/GWAS/micepower.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/GWAS/FDR_TPIALL.jpg" | prepend: site.baseurl }}"></div>
 
 ## Human simulation result
 
@@ -171,4 +171,7 @@ set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bmdqq.png" | prepend: site.baseurl }}"></div>
 
+# Calculated time
 
+<div align="center"><img src="{{ "/images/Blog/GWAS/bar_time.jpg" | prepend: site.baseurl }}"></div>
+ 
