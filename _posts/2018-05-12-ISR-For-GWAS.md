@@ -1,5 +1,6 @@
 ---
 layout: post
+output: html_document
 tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 ---
 
