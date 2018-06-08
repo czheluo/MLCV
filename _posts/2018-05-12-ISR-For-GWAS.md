@@ -42,13 +42,29 @@ tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 ## Manhattan plot
 
 Here is the matlab code for BMD GWAS Manhattan plot.
+<<insertHTML:[test.html]
 
-{% include BMD_man.html %}
+etc, etc, etc
+
+```{r, echo=FALSE}
+htmltools::includeHTML("BMD_man.html")
+```
+
+etc, etc, etc
+# {% include BMD_man.html %}
 
 # QQ plot
 
 Here is the matlab code for BMD GWAS QQplot.
 
 <!--div align="center"><img src="{{ "/images/Blog/.jpg" | prepend: site.baseurl }}"></div-->
+<<insertHTML:[test.html]
 
-{% include BMD_qq.html %}
+etc, etc, etc
+
+```{r, echo=FALSE}
+htmltools::includeHTML("BMD_qq.html")
+```
+
+etc, etc, etc
+# {% include BMD_qq.html %}
