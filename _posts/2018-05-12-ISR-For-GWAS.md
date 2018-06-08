@@ -33,7 +33,6 @@ tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 
 # Estimated Effect (PVE)
 
-/images/Blog/GWAS/
 
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
