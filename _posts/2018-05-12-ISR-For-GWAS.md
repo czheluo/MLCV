@@ -8,41 +8,34 @@ tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 
 # ISR (Iterative screen regression )
 
-<p style="text-align:justify">Here we introduce a new unique variable selection procedure of regression statistic method, call Iterative screening regression(ISR). Where we formulated a new regression information criterion (RIC) and used this criterion as the objective function of the entire variable screen process. We evaluate various model selection criteria through simulations, which suggest that the proposed ISR method performs well in terms of FDR and power. Finally, we show the usefulness of our approach by applying it to A. thaliana and mouse data.</p>
+Here we introduce a new unique variable selection procedure of regression statistic method, call Iterative screening regression(ISR). Where we formulated a new regression information criterion (RIC) and used this criterion as the objective function of the entire variable screen process. We evaluate various model selection criteria through simulations, which suggest that the proposed ISR method performs well in terms of FDR and power. Finally, we show the usefulness of our approach by applying it to A. thaliana and mouse data.
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/ISRGWAS.jpg" | prepend: site.baseurl }}"></div>
 
-
 # Simulation
 
-<p style="text-align:justify">Human dataset derived from <a href="http://gigadb.org/dataset/view/id/100094/" target="_blank">PLINK</a> included two real human genotype datasets, the first dataset included  1000 samples and 100000 makers (SNPs) over all chromosomes. The second included 10000 samples(6000 cases and 4000 control) and 88058 markers (SNPs), and only included in 19, 20, 21, and 22 chromosomes. Also, another outbred <a href="https://datadryad.org/resource/doi:10.5061/dryad.2rs41" target="_blank"> CFW</a> (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to perform one simulation experiments. well, all simulation both setting the heritability was 0.5.
+Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) included two real human genotype datasets, the first dataset included 1000 samples and 100000 makers (SNPs) over all chromosomes. The second included 10000 samples(6000 cases and 4000 control) and 88058 markers (SNPs), and only included in 19, 20, 21, and 22 chromosomes. Also, another outbred [CFW](https://datadryad.org/resource/doi:10.5061/dryad.2rs41) (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to perform one simulation experiments. well, all simulation both setting the heritability was 0.5.
 
 # Power versus FDR and TPR (Type one error)
 
 ## Mice simulation result
 
-
 <div align="center"><img src="{{ "/images/Blog/GWAS/micepower.jpg" | prepend: site.baseurl }}"></div>
 
 ## Human simulation result
 
-
-
 <div align="center"><img src="{{ "/images/Blog/GWAS/humanpower.jpg" | prepend: site.baseurl }}"></div>
 
-
 # Estimated Effect (PVE)
-
-
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/HUAMNPVE.jpg" | prepend: site.baseurl }}"></div>
 
-
 # Real dataset
 
 ## Manhattan plot
+
 Here is the matlab code for BMD GWAS Manhattan plot.
 
 ```matlab
@@ -57,7 +50,7 @@ for i=2:1:nsnp
    if mlssr(i,1)~= mlssr(i-1,1)
     f(i,1)=f(i-1,1)+mlssr(i,2)+2000000;
     x(k)=f(i,1)-1000000;
-    if k>1 
+    if k>1
     xg(k)=(f(i-1,1)-x(k-1))/2+x(k-1);
     ch(k)=mlssr(i-1,1);
     else
@@ -65,9 +58,9 @@ for i=2:1:nsnp
     end
     k=k+1;
    else
-   f(i,1)=mlssr(i,2)-mlssr(i-1,2)+f(i-1,1); 
+   f(i,1)=mlssr(i,2)-mlssr(i-1,2)+f(i-1,1);
    ch(k)=mlssr(i-1,1);
-    end 
+    end
 end
 xg(k)=(f(i,1)-x(k-1))/2+x(k-1);
 ch(k)=mlssr(i,1);
@@ -81,7 +74,7 @@ j=1;
 for j=1:1:(phe-2)
     figure(j);
     cl=load('colorchrhg.txt');ncl=randperm(length(cl(:,1)));cl=cl(ncl,:);
-    %cl=cl(1:nchr,:);% all kinds of color 
+    %cl=cl(1:nchr,:);% all kinds of color
     scatter(f(:,1),f(:,j+1),10,cl(chr,:),'o','filled');%cl(mod(mlssr(:,1),nchr)+1,:)/1
     %display the gene name or not
     %text(f(lm,1),f(lm,j+1)+.15*4, nasnp(:,1:dims(2)),'FontSize', 10);
@@ -130,6 +123,7 @@ end
 # QQ plot
 
 Here is the matlab code for BMD GWAS QQplot.
+
 ```matlab
 load qq.mat
 o = -log10(sort(plm,'ascend'));
@@ -159,7 +153,7 @@ if oneMinusAlphalevel==1-alphaLevel
     end
 end
 %alpha=[alpha half oneMinusAlpha];
-betaDown=half-alpha;betaUp=oneMinusAlpha-half; 
+betaDown=half-alpha;betaUp=oneMinusAlpha-half;
 theoreticalPval=(mSeq/M)';
 lowerBar=-log10(theoreticalPval-betaDown);%lowerBar=real(lowerBar);
 upperBar=-log10(theoreticalPval+betaUp);
@@ -176,6 +170,5 @@ set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
 ```
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bmdqq.jpg" | prepend: site.baseurl }}"></div>
-
 
 
