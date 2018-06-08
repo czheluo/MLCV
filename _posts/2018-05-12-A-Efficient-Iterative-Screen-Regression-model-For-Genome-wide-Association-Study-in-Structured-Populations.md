@@ -6,7 +6,7 @@ category: [BMD_man,BMD_qq]
 tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 ---
 
-# ISR (Iterative Screen Regression model)
+# Iterative Screen Regression model (ISR)
 
 Here we introduce a new unique variable selection procedure of regression statistic method, call Iterative screening regression(ISR). Where we formulated a new regression information criterion (RIC) and used this criterion as the objective function of the entire variable screen process. We evaluate various model selection criteria through simulations, which suggest that the proposed ISR method performs well in terms of FDR and power. Finally, we show the usefulness of our approach by applying it to A. thaliana and mouse data.
 
