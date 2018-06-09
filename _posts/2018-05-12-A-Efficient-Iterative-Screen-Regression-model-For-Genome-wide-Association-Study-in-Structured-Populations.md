@@ -181,8 +181,8 @@ set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bar_time.jpg" | prepend: site.baseurl }}"></div>
  
-#### If you have any question for our model, and Found any omission (bug) . Please feel free to contact me
+#### If you have any question for our model, and Found any omission (bug) . Please feel free to contact us.
 
 [Chenzhe Luo](https://github.com/mengluoML)
-
+[Shiliang Gu](http://www.wheatlab-yzu.com/article_show.asp?id=2184)
 
