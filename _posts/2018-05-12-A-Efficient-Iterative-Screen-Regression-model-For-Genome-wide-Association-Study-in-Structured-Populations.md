@@ -26,20 +26,20 @@ Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) in
 
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-```math
+
 Mice:
-$$Y_j=\displaystyle\sum_{i=1}^{50} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1161.$$
-```
+$$Y_j=\displaystyle\sum_{i=1}^{50} X_i\beta_i+ \varepsilon,\varepsilon \backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1161.$$
 
-```math
-Human:
-$$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1000.$$
-```
 
-```math
+
 Human:
-$$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....10000.$$
-```
+$$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon \backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1000.$$
+
+
+
+Human:
+$$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon \backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....10000.$$
+
   
 # Power versus FDR and TPR (Type one error)
 
