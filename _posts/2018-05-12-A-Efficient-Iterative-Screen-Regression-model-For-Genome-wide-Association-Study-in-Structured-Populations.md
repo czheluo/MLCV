@@ -49,7 +49,7 @@ FDR=FP/(TP+FP),false discovery rate
 ```math
 k_{n+1}
 ```
-k_{n+1}
+$ k_{n+1} $
 ### Mice
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
