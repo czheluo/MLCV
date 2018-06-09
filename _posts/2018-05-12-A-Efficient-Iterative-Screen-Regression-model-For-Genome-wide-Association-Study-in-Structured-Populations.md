@@ -20,6 +20,12 @@ Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) in
 
 # Power versus FDR and TPR (Type one error)
 
+How to define the power versus FDR and TPR, just saw [here](https://en.wikipedia.org/wiki/Sensitivity_and_specificity). As following was the confusion matrix.
+
+\frac{n!}{k!(n-k)!}
+
+<div align="center"><img src="{{ "/images/Blog/GWAS/power.jpg" | prepend: site.baseurl }}"></div>
+
 ## Mice simulation result
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/FDR_TPIALL.jpg" | prepend: site.baseurl }}"></div>
@@ -42,7 +48,7 @@ Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) in
 
 ## Manhattan plot
 
-Here is the matlab code for BMD GWAS Manhattan plot.
+Here was how I have coded for BMD GWAS Manhattan plot.
 
 ```{matlab}
 load manha.mat
@@ -51,7 +57,7 @@ figure("Position",[0 200 1000 500])
 %nasnp=label(lm);
 %dims = size(nasnp);
 k=1;
-f(1,1)=mlssr(1,2)+2000000;
+f(1,1)=mlssr(1,2)+2000000;%if you used the genetic map, just only changed the number 2000000 to 
 for i=2:1:nsnp
    if mlssr(i,1)~= mlssr(i-1,1)
     f(i,1)=f(i-1,1)+mlssr(i,2)+2000000;
@@ -128,7 +134,7 @@ end
 
 # QQ plot
 
-Here is the matlab code for BMD GWAS QQplot.
+Here was the matlab code for BMD GWAS QQplot.
 
 ```{matlab}
 load qq.mat
