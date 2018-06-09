@@ -28,17 +28,17 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
 ```math
 Mice:
-Y_j=\displaystyle\sum_{i=1}^{50} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1161.
+$$Y_j=\displaystyle\sum_{i=1}^{50} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1161.$$
 ```
 
 ```math
 Human:
-Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1000.
+$$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1000.$$
 ```
 
 ```math
 Human:
-Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....10000.
+$$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon  	\backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....10000.$$
 ```
   
 # Power versus FDR and TPR (Type one error)
@@ -61,9 +61,8 @@ FDR=FP/(TP+FP),false discovery rate
 
 ## Estimated Effect (PVE)
 ```math
-k_{n+1}
+$$PVE= 	\frac{\beta^2Var(X)}{ Var(Y)}=\frac{\beta^2Var(X)}{\beta^2Var(X)+\sigma^2}\approx \frac{Var(X\beta)}{ Var(Y)}$$
 ```
-$ k_{n+1} $
 ### Mice
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
