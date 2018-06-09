@@ -60,6 +60,8 @@ $$FDR=\frac{FP}{TP+FP}$$,false discovery rate
 
 ## Estimated Effect (PVE)
 
+Computing proportion of variance in phenotype explained by a given SNP (PVE) :
+
 $$PVE=\frac{\beta^2Var(X)}{ Var(Y)}=\frac{\beta^2Var(X)}{\beta^2Var(X)+\sigma^2}\approx \frac{Var(X\beta)}{ Var(Y)}$$
 
 ### Mice
