@@ -2,7 +2,10 @@
 layout: post
 comments: true
 enable_mathjax: true
-output: html_document
+output: 
+html_document:
+   md_document:
+       variant: markdown_github
 category: [BMD_man,BMD_qq]
 tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 ---
