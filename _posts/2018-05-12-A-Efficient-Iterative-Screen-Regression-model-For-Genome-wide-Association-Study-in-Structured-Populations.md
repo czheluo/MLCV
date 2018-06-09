@@ -11,9 +11,11 @@ tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css"/>
 <link href="//cdn.rawgit.com/Khan/KaTeX/v0.5.1/dist/katex.min.css" rel="stylesheet" type="text/css">
 <script src="//cdn.rawgit.com/Khan/KaTeX/v0.5.1/dist/katex.min.js"></script>
-<script src="https://cdn.mathjax.org/mathjax/2.5-latest/MathJax.js?delayStartupUntil=configured"></script>
+
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+ 
+ 
 # Iterative Screen Regression model (ISR)
 
 Here we introduce a new unique variable selection procedure of regression statistic method, call Iterative screening regression(ISR). Where we formulated a new regression information criterion (RIC) and used this criterion as the objective function of the entire variable screen process. We evaluate various model selection criteria through simulations, which suggest that the proposed ISR method performs well in terms of FDR and power. Finally, we show the usefulness of our approach by applying it to A. thaliana and mouse data.
@@ -24,7 +26,8 @@ Here we introduce a new unique variable selection procedure of regression statis
 
 Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) included two real human genotype datasets, the first dataset included 1000 samples and 100000 makers (SNPs) over all chromosomes. The second included 10000 samples(6000 cases and 4000 control) and 88058 markers (SNPs), and only included in 19, 20, 21, and 22 chromosomes. Also, another outbred [CFW](https://datadryad.org/resource/doi:10.5061/dryad.2rs41) (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to perform one simulation experiments. well, all simulation both setting the heritability was 0.5.
 
- 	\alpha
+
+  
 # Power versus FDR and TPR (Type one error)
 
 How to define the power versus FDR and TPR, just saw [here](https://en.wikipedia.org/wiki/Sensitivity_and_specificity). As following was the confusion matrix.
