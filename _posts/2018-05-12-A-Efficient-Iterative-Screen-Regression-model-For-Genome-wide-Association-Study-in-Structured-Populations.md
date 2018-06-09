@@ -24,7 +24,7 @@ Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) in
 How to define the power versus FDR and TPR, just saw [here](https://en.wikipedia.org/wiki/Sensitivity_and_specificity). As following was the confusion matrix.
 
 ```math
-a=1+2
+FDR=FP/(TP+FP),false discovery rate
 ```
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/power.jpg" | prepend: site.baseurl }}"></div>
