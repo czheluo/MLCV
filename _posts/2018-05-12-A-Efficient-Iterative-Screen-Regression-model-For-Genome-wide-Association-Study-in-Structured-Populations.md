@@ -13,7 +13,7 @@ tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
 <script src="//cdn.rawgit.com/Khan/KaTeX/v0.5.1/dist/katex.min.js"></script>
 
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+
  
  
 # Iterative Screen Regression model (ISR)
