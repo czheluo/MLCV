@@ -200,6 +200,6 @@ set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
  
 #### If you have any question for our model, and Found any omission (bug) . Please feel free to contact us.
 
-##### [Chenzhe Luo](https://github.com/mengluoML)
-##### [Shiliang Gu](http://www.wheatlab-yzu.com/article_show.asp?id=2184)
+* [Chenzhe Luo](https://github.com/mengluoML)
+* [Shiliang Gu](http://www.wheatlab-yzu.com/article_show.asp?id=2184)
 
