@@ -44,7 +44,7 @@ Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) in
 
 Here is the matlab code for BMD GWAS Manhattan plot.
 
-```matlab
+```{Matlab}
 load manha.mat
 [nsnp,phe]=size(mlssr);nchr=length(unique(chr));
 figure("Position",[0 200 1000 500])
@@ -130,7 +130,7 @@ end
 
 Here is the matlab code for BMD GWAS QQplot.
 
-```matlab
+```{Matlab}
 load qq.mat
 o = -log10(sort(plm,'ascend'));
 alphaLevel=0.05;halflevel=0.5;oneMinusAlphalevel=1-alphaLevel;
