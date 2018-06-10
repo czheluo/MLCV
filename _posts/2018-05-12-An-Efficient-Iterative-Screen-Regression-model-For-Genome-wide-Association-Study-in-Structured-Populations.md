@@ -54,6 +54,9 @@ How to define the power versus FDR and TPR, just saw [here](https://en.wikipedia
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/power.jpg" | prepend: site.baseurl }}"></div>
 
+#### Receiver Operating Characteristic curves of simulations
+Receiver Operating Characteristic (ROC) curves, demonstrating the trade-off between false positives and true positives, using simulated data based on the RA data. Lines trending toward the upper left corner denote better ROC curves while those in the opposite direction correspond to poorer methods.
+
 #### Mice simulation result
 A receiver operating characteristic curve was a plot of the statistical power against the controlled FDR and FPR(type I error). Where we also calculated the AUC value, smaller AUC value indicated that method batter perform.
 
@@ -63,7 +66,7 @@ A receiver operating characteristic curve was a plot of the statistical power ag
 #### Human simulation result
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/humanpower.jpg" | prepend: site.baseurl }}"></div>
-Statistical power was defined as the proportion of simulated markers detected at cost defined by either False Discovery Rate (FDR) or False Positive Rate (FPR, Type I error). a The two types of Receiver Operating Characteristic (ROC) curves are displayed separately for TPR (true positive rate, power) versus FDR and FPR (the two simulations of Scenarios Ⅴ (1-2)). b The Area Under the Curves (AUC) are also displayed separately for TPR (true positive rate, power) versus FDR and FPR for 100 simulations. Four GWAS methods (ISR, FarmCPU, FaSTLMM, and PLINK-Fisher) were compared with phenotypes simulated from real genotypes in human. The simulated phenotypes had a heritability of 50%, controlled by 100 SNPs. These markers were randomly sampled from the available 100000 (88025) Single Nucleotide Polymorphism (SNPs). b .To specify the multiple comparison procedures using Least Significant Difference (LSD) after ANOVA. Here, ‘*’ represent a significant level of 0.05; ‘**’ represent a significant level of 0.01; ‘***’ represent a significant level of 0.001.
+Statistical power was defined as the proportion of simulated markers detected at cost defined by either False Discovery Rate (FDR) or False Positive Rate (FPR, Type I error). a The two types of Receiver Operating Characteristic (ROC) curves are displayed separately for TPR (true positive rate, power) versus FDR and FPR (the two simulations of Scenarios Ⅴ (1-2)). b The Area Under the Curves (AUC) are also displayed separately for TPR (true positive rate, power) versus FDR and FPR for 100 simulations. Four GWAS methods (ISR, FarmCPU, FaSTLMM, and PLINK-Fisher) were compared with phenotypes simulated from real genotypes in human. The simulated phenotypes had a heritability of 50%, controlled by 100 SNPs. These markers were randomly sampled from the available 100000 (88025) Single Nucleotide Polymorphism (SNPs). b .To specify the multiple comparison procedures using Least Significant Difference (LSD) after ANOVA. Here, $*$ represent a significant level of 0.05; $**$ represent a significant level of 0.01; $***$ represent a significant level of 0.001.
 
 ### Estimated Effect (PVE)
 
@@ -81,6 +84,109 @@ a The distribution of all simulated effects (all true effect) and the distributi
 <div align="center"><img src="{{ "/images/Blog/GWAS/HUMANPVE.jpg" | prepend: site.baseurl }}"></div>
 a The explained variance of the casual loci effects estimated by MLLM, FarmCPU, FaSTLMM, and PLINK-Fisher within the 100 simulations (The two simulations of Scenarios V (1-2)). b The distribution of all simulated effects (True Effect, black line) and the distribution of effects of loci identified (after 0.05 Bonferroni correction) by ISR (906 loci and 3461 loci), FarmCPU (760 loci and 3037 loci), FaSTLMM (433 loci and 2297 loci) and PLINK-Fisher (446 loci and 4041), respectively (The two simulations of Scenarios V (1-2)).
 # Real dataset
+### LD(Linkage Disequilibrium)
+Locuszoom plots for genome-wide significant SNP both found by ISR and FASTmrEMMA. The locuszoom plots showing the zoom in of the most significant SNP both found by FASTmrEMMA and ISR two methods. The points for each SNP are colored by the level of the linkage disequilibrium (r2) with the index SNP, the SNP with the highest association to the quantitative trait meristem zone length. Following was the matlab code for locuszoom plot.
+
+```matlab
+clear,clc
+warning off
+addpath D:\\MATLAB\\isreg\\color\\cbrewer2\\cbrewer2
+addpath D:\\MATLAB\\isreg\\arrow
+addpath D:\\MATLAB\\isreg\\color\\colorspace\\colorspace
+load meritem_201.mat
+%tit='Chromosome 4';
+subplot(4,1,1)
+bin=2500000;%windon size 
+p1=max(po);p2=min(po);
+p=round((p1-p2)/bin);pl=zeros(length(po),1);
+%for i=1:1
+%a=0;
+pol=po;
+pm=zeros(p,1);
+for j=1:p
+    [a,b]=find(po<(po(1)+bin));
+    pm(j)=length(a);
+    col=zeros(p,3);
+        %pl(a>pm(j))=j;%
+    cl=unifrnd(0,1,1,3);
+    col(j,:)=cl;
+    stem(po(a),.05*ones(size(po(a))),'Color',cl,'Marker','none');
+    %bar(po(a),.05*ones(size(po(a))),'FaceColor',cl,'LineWidth',.2)
+        %a=a+0;
+    po(a)=[];  
+    hold on
+end
+xlim([9.45*1000000 9.565*1000000]);
+pm=num2str(pm);
+lgd = legend(pm,'Location','north','Orientation','horizontal');
+title(lgd,'Plotted SNPs');
+%h2=stem(po,.05*ones(size(po)),'Color','k','Marker','none');
+set(gca,'Xtick',[],'Ytick',[]);ylim([0 0.05]);%ylabel('plotted SNPs')
+set(gca,'FontName','Times New Roman','FontWeight','bold','FontSize',14);
+
+subplot(4,1,2)
+fpml=-log10(f_pml);cb=40;
+scatter(pol/1000000,fpml,cb,ld,'filled','LineWidth',2)
+%colormap jet% the catgory of colormap{parula,jet,hsv,hot,cool,spring,summer,autumn,winter,gray,bone,copper,pink,lines,colorcube,prism,flag,white}
+cm=colorbar('location','east','AxisLocation','in');
+cm.Label.String = 'r^2';
+%new color type
+colormap(cbrewer2('seq','RdBu',6));%PuBu,YIGnBu,RdBu,RdYlBu
+box on;
+set(gca,'FontName','Times New Roman', 'FontWeight','bold','FontSize',14);
+ylabel('-log_{10}(\itP)');%title(tit);
+set(gca,'XTick',[]);
+xlim([9.45 9.565]);ylim([-0.2 4]);
+
+subplot(4,1,3)
+mpml=-log10(m_pml);
+scatter(pol/1000000,mpml,cb,ld,'filled','LineWidth',2)
+%colormap jet% the catgory of colormap{parula,jet,hsv,hot,cool,spring,summer,autumn,winter,gray,bone,copper,pink,lines,colorcube,prism,flag,white}
+cm=colorbar('location','east');
+cm.Label.String = 'r^2';
+%new color type
+colormap(cbrewer2('seq','RdBu',6));
+box on;
+set(gca,'FontName','Times New Roman', 'FontWeight','bold','FontSize',14);
+ylabel('-log_{10}(\itP)');%title(tit);
+set(gca,'XTick',[]);
+xlim([9.45 9.565]);ylim([-3 40]);
+
+
+subplot(4,1,4);
+for i=1:length(lab)
+    a1=[al(i),al(i)];
+    ps=px(i,:)/1000000;
+    %line(ps,a1,'LineWidth',7);
+    %annotation('arrow',)
+    %dim=[ps,a1];
+    %annotation(hf, 'arrow', dim);
+    cl=unifrnd(0,1,1,3);
+    text(mean(ps)-0.005,a1(1)+0.4,lab(i),'Color',cl,'FontName','Times New Roman',...
+             'FontWeight','bold','FontSize',10);
+    %davinci( 'arrow', 'X', ps, 'Y',a1,'ArrowType', 'double','LineWidth',2);%,'Shaft.Type','rectangle'
+    %daspect( [1 1 1] ) 
+    davinci( 'arrow', 'X', ps, ...
+                  'Y',a1, ...
+                  'ArrowType','single',...%double
+                  'Shaft.Type','rectangle', ...
+                  'Shaft.Width',0.3,... #'Head.Length',0.03,...
+                  'Head.Width',0.3, ...# 'Head.Sweep',0, ...
+                  'Color',cl, ...
+                  'EdgeColor','k', ...
+                  'LineWidth',0.5 );
+    hold on
+    %setting the right or left arrow (if 0 or 1)
+    %text(ps,a1,'\rightarrow','FontSize',14,'FontWeight','bold')
+end
+xlim([9.45 9.565]);
+set(gca,'FontName','Times New Roman', 'FontWeight','bold','FontSize',14);
+%set(gca,'xlim',[pos(n1),pos(n2)]);
+set(gca,'YTick',[]);
+xlabel('Position on Chromosome 3 (Mb)');set(gca,'Box','on','XGrid','on');   
+
+```
+<div align="center"><img src="{{ "/images/Blog/GWAS/LOCUSZOOM.jpg" | prepend: site.baseurl }}"></div>
 
 ### Manhattan plot
 
@@ -165,12 +271,45 @@ for j=1:1:(phe-2)
  text(xg(19),-log10(0.05/nsnp),num2str(5.39E-07))
 end
 ```
+#### R code for permutation in FarmCPU
+We calculated a significance threshold via permutation, which is a standard approach for QTL mapping in mice that controls for the type I error rate (P<0.1, THE RED DASHLINE IN VISUILIZATION PLOT).
+```r
+p <- matrix(NA,92734,1000)
+time <- Sys.time()
+for(i in 1:1000){
+  n <- length(Y[,1])
+  test <- sample(n)
+  y <- Y[test,]
+  lmFarmCPU <- FarmCPU(Y = y, GD = genm, GM = mapm,threshold.output = 22)
+  p[,i] <- lmFarmCPU$GWAS$P.value
+  graphics.off()
+}
+write.table(p,'permutation_BMD_P.txt',quote = FALSE,col.names = FALSE,row.names = FALSE)
+t <- f(time)
+t
+p <- read.table('permutation_BMD_p.txt',header = FALSE)
+#save(genm,mapm1 file="mice_1160_92734.RData")
+P <- NULL
+for(i in 1:1000){
+  P[i] <- min(p[,i])
+}
+
+#histplot
+p <- read.csv('permutation_BMD_P.csv',header = FALSE)
+p <- c(p)
+p$x
+hist(p$V1, breaks=30, col="gray")
+# P<0.1
+abline(v=sort(p$V1)[900],col='red')
+
+```
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bmdman.png" | prepend: site.baseurl }}"></div>
 
 ### QQ plot
+Error bars in quantile-quantile plots. The quantile-quantile plot 95% confidence intervals shown in plots were computed by assuming M independent p-values, uniformly distributed on [0,1]. The $k^{th}$ largest P value from this distribution is the  $k^{th}$ order statistic, which is known to have a Beta $(k, M-k-1)$  distribution. The mean of this distribution is $\frac{k}{M+1}$. Thus, at point $log(\frac{k}{M+1})$ on the horizontal and vertical axis, error bars can be plotted as the $(log)95%$ probability interval of this Beta distribution.
 
-Here was the matlab code for BMD GWAS QQplot.
+Here was my matlab coded for BMD GWAS QQplot.
 
 ```matlab
 load qq.mat
@@ -220,10 +359,11 @@ set(lg,'FontName','Times New Roman','FontWeight','bold','FontSize',12);
 <div align="center"><img src="{{ "/images/Blog/GWAS/bmdqq.png" | prepend: site.baseurl }}"></div>
 
 ### Calculated time
+Comparison of computing time of ISR and others methods in the third simulation scenarios. The average of computing times using five methods (FarmCPU-R, GEMMA-C++, CMLM-R, MLMM-R, and FASTmrEMMA-R) are compared with ISR-M (MATLAB language) for 100 simulations. The dataset containing 1161 individuals genotyped with 20000 markers. Simulation studies using a computer with an Inter(R) i3-6100 @3.7GHz CPU in windows 10. 
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bar_time.jpg" | prepend: site.baseurl }}"></div>
  
-#### If you have any question for our model, and Found any omission (bug) . Please feel free to contact us.
+#### If you have interested in our model or any question and omission (bug). Please feel free to contact us.
 
 * [Meng Luo](https://github.com/mengluoML)
 * [Shiliang Gu](http://www.wheatlab-yzu.com/article_show.asp?id=2184)
