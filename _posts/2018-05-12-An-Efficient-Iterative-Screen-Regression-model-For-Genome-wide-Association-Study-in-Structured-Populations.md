@@ -50,11 +50,11 @@ $$FDR=\frac{FP}{TP+FP}$$,false discovery rate
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/power.jpg" | prepend: site.baseurl }}"></div>
 
-## Mice simulation result
+* Mice simulation result
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/FDR_TPIALL.jpg" | prepend: site.baseurl }}"></div>
 
-## Human simulation result
+* Human simulation result
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/humanpower.jpg" | prepend: site.baseurl }}"></div>
 
@@ -64,17 +64,17 @@ Computing proportion of variance in phenotype explained by a given SNP (PVE) :
 
 $$PVE=\frac{\beta^2Var(X)}{ Var(Y)}=\frac{\beta^2Var(X)}{\beta^2Var(X)+\sigma^2}\approx \frac{Var(X\beta)}{ Var(Y)}$$
 
-### Mice
+* Mice
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
 
-### Human
+* Human
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/HUMANPVE.jpg" | prepend: site.baseurl }}"></div>
 
 # Real dataset
 
-## Manhattan plot
+* Manhattan plot
 
 Here was how I have coded for BMD GWAS Manhattan plot.
 
@@ -160,7 +160,7 @@ end
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bmdman.png" | prepend: site.baseurl }}"></div>
 
-# QQ plot
+* QQ plot
 
 Here was the matlab code for BMD GWAS QQplot.
 
