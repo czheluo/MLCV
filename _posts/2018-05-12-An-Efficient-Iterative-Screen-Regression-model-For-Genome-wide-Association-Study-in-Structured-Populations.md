@@ -20,7 +20,7 @@ Here we introduce a new unique variable selection procedure of regression statis
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/ISRGWAS.jpg" | prepend: site.baseurl }}"></div>
 
-<p style="text-align: center;"> Fig. 1 Schematic overview of model-based is iterative screen regression for GWAS </p>
+<p style="text-align: center;"> Fig. 1 Schematic overview of model-based iterative screen regression for GWAS </p>
 
 # Simulation
 
@@ -42,20 +42,20 @@ $$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon \backsim
 Human:
 $$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon \backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....10000.$$
 
-  
+
 # Power versus FDR and TPR (Type one error)
 
 How to define the power versus FDR and TPR, just saw [here](https://en.wikipedia.org/wiki/Sensitivity_and_specificity). As following was the confusion matrix.
 
-$$TPR=\frac{TP}{TP+FN}$$,True positive rate (Power & Sensitivity)
-$$FDR=\frac{FP}{TP+FP}$$,False discovery rate
-$$FPR=\frac{FP}{FP+TN}$$,False positive rate (1-Specificity)
+* $$TPR=\frac{TP}{TP+FN}$$,True positive rate (Power & Sensitivity)
+* $$FDR=\frac{FP}{TP+FP}$$,False discovery rate
+* $$FPR=\frac{FP}{FP+TN}$$,False positive rate (1-Specificity)
 
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/power.jpg" | prepend: site.baseurl }}"></div>
 
 #### Mice simulation result
-A receiver operating characteristic curve was a plot of the statistical power against the controlled FDR and FPR(type I error). Where we also calculated the AUC value, smaller AUV value indicated that batter perform.
+A receiver operating characteristic curve was a plot of the statistical power against the controlled FDR and FPR(type I error). Where we also calculated the AUC value, smaller AUC value indicated that method batter perform.
 
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/FDR_TPIALL.jpg" | prepend: site.baseurl }}"></div>
@@ -63,6 +63,7 @@ A receiver operating characteristic curve was a plot of the statistical power ag
 #### Human simulation result
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/humanpower.jpg" | prepend: site.baseurl }}"></div>
+Statistical power was defined as the proportion of simulated markers detected at cost defined by either False Discovery Rate (FDR) or False Positive Rate (FPR, Type I error). a The two types of Receiver Operating Characteristic (ROC) curves are displayed separately for TPR (true positive rate, power) versus FDR and FPR (the two simulations of Scenarios Ⅴ (1-2)). b The Area Under the Curves (AUC) are also displayed separately for TPR (true positive rate, power) versus FDR and FPR for 100 simulations. Four GWAS methods (ISR, FarmCPU, FaSTLMM, and PLINK-Fisher) were compared with phenotypes simulated from real genotypes in human. The simulated phenotypes had a heritability of 50%, controlled by 100 SNPs. These markers were randomly sampled from the available 100000 (88025) Single Nucleotide Polymorphism (SNPs). b .To specify the multiple comparison procedures using Least Significant Difference (LSD) after ANOVA. Here, ‘*’ represent a significant level of 0.05; ‘**’ represent a significant level of 0.01; ‘***’ represent a significant level of 0.001.
 
 ### Estimated Effect (PVE)
 
@@ -74,10 +75,11 @@ $$PVE=\frac{\beta^2Var(X)}{ Var(Y)}=\frac{\beta^2Var(X)}{\beta^2Var(X)+\sigma^2}
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
 
+a The distribution of all simulated effects (all true effect) and the distribution of effects of loci identified (100 casual loci within 100 simulations, and only true positive) by six methods. The solid line shows the effect size by different methods and the phenotype with 50% of PVE. The bottom boxplot was explained the variance of the loci effect estimated by ISR, FASTmrEMMA, FarmCPU, GEMMA, and CMLM within the 100 simulations. Performance of estimating PVE is measured by the root of mean square error (RMSE), where a lower value indicates better performance. The true PVEs are shown as the horizontal dash lines.
 #### Human
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/HUMANPVE.jpg" | prepend: site.baseurl }}"></div>
-
+a The explained variance of the casual loci effects estimated by MLLM, FarmCPU, FaSTLMM, and PLINK-Fisher within the 100 simulations (The two simulations of Scenarios V (1-2)). b The distribution of all simulated effects (True Effect, black line) and the distribution of effects of loci identified (after 0.05 Bonferroni correction) by ISR (906 loci and 3461 loci), FarmCPU (760 loci and 3037 loci), FaSTLMM (433 loci and 2297 loci) and PLINK-Fisher (446 loci and 4041), respectively (The two simulations of Scenarios V (1-2)).
 # Real dataset
 
 ### Manhattan plot
