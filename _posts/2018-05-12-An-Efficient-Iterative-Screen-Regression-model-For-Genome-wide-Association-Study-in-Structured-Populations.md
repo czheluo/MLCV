@@ -20,15 +20,17 @@ Here we introduce a new unique variable selection procedure of regression statis
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/ISRGWAS.jpg" | prepend: site.baseurl }}"></div>
 
+<p style="text-align: center;"> Fig. 1 Schematic overview of model-based is iterative screen regression for GWAS </p>
+
 # Simulation
 
-Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) included two real human genotype datasets, the first dataset included 1000 samples and 100000 makers (SNPs) over all chromosomes. The second included 10000 samples(6000 cases and 4000 control) and 88058 markers (SNPs), and only included in 19, 20, 21, and 22 chromosomes. Also, another outbred [CFW](https://datadryad.org/resource/doi:10.5061/dryad.2rs41) (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to perform one simulation experiments. well, all simulation both setting the heritability was 0.5.
+Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) included two real human genotype datasets, the first dataset included 1000 samples and 100000 makers (SNPs) over all chromosomes. The second included 10000 samples(6000 cases and 4000 control) and 88058 markers (SNPs), and only included in 19, 20, 21, and 22 chromosomes. Also, another outbred [CFW](https://datadryad.org/resource/doi:10.5061/dryad.2rs41) (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to perform one simulation experiments. well, all simulation both setting the heritability was 0.5. The first 100 phenotypes used all CFW mice dataset that including 100 markers were randomly selected as causal loci, respectively. We also assigned an additive effect randomly drawn from a standard normal distribution and added a random environmental term, where the  $h^2$ of the simulated traits only was 0.5, here. The second and third 100 phenotypes used human dataset that also including 100 markers were randomly selected as causal loci, respectively. Where the $h^2$ of the simulated traits (complex traits) only was 0.5.
 
 
 
 
 Mice:
-$$Y_j=\displaystyle\sum_{i=1}^{50} X_i\beta_i+ \varepsilon,\varepsilon \backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1161.$$
+$$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon \backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....1161.$$
 
 
 
@@ -45,12 +47,16 @@ $$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon \backsim
 
 How to define the power versus FDR and TPR, just saw [here](https://en.wikipedia.org/wiki/Sensitivity_and_specificity). As following was the confusion matrix.
 
-$$FDR=\frac{FP}{TP+FP}$$,false discovery rate
+$$TPR=\frac{TP}{TP+FN}$$,True positive rate (Power & Sensitivity)
+$$FDR=\frac{FP}{TP+FP}$$,False discovery rate
+$$FPR=\frac{FP}{FP+TN}$$,False positive rate (1-Specificity)
 
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/power.jpg" | prepend: site.baseurl }}"></div>
 
 #### Mice simulation result
+A receiver operating characteristic curve was a plot of the statistical power against the controlled FDR and FPR(type I error). Where we also calculated the AUC value, smaller AUV value indicated that batter perform.
+
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/FDR_TPIALL.jpg" | prepend: site.baseurl }}"></div>
 
