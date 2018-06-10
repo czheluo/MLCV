@@ -127,7 +127,8 @@ set(gca,'FontName','Times New Roman','FontWeight','bold','FontSize',14);
 subplot(4,1,2)
 fpml=-log10(f_pml);cb=40;
 scatter(pol/1000000,fpml,cb,ld,'filled','LineWidth',2)
-%colormap jet% the catgory of colormap{parula,jet,hsv,hot,cool,spring,summer,autumn,winter,gray,bone,copper,pink,lines,colorcube,prism,flag,white}
+%colormap jet% the catgory of colormap{parula,jet,hsv,hot,cool,spring,summer,
+%autumn,winter,gray,bone,copper,pink,lines,colorcube,prism,flag,white}
 cm=colorbar('location','east','AxisLocation','in');
 cm.Label.String = 'r^2';
 %new color type
@@ -141,7 +142,9 @@ xlim([9.45 9.565]);ylim([-0.2 4]);
 subplot(4,1,3)
 mpml=-log10(m_pml);
 scatter(pol/1000000,mpml,cb,ld,'filled','LineWidth',2)
-%colormap jet% the catgory of colormap{parula,jet,hsv,hot,cool,spring,summer,autumn,winter,gray,bone,copper,pink,lines,colorcube,prism,flag,white}
+%colormap jet% the catgory of colormap{parula,jet,hsv,
+%hot,cool,spring,summer,autumn,winter,gray,bone,copper,
+%pink,lines,colorcube,prism,flag,white}
 cm=colorbar('location','east');
 cm.Label.String = 'r^2';
 %new color type
