@@ -307,7 +307,7 @@ abline(v=sort(p$V1)[900],col='red')
 <div align="center"><img src="{{ "/images/Blog/GWAS/bmdman.png" | prepend: site.baseurl }}"></div>
 
 ### QQ plot
-Error bars in quantile-quantile plots. The quantile-quantile plot 95% confidence intervals shown in plots were computed by assuming M independent p-values, uniformly distributed on [0,1]. The $k^{th}$ largest P value from this distribution is the  $k^{th}$ order statistic, which is known to have a Beta $(k, M-k-1)$  distribution. The mean of this distribution is $\frac{k}{M+1}$. Thus, at point $log(\frac{k}{M+1})$ on the horizontal and vertical axis, error bars can be plotted as the $(log)95%$ probability interval of this Beta distribution.
+Error bars in quantile-quantile plots. The quantile-quantile plot 95% confidence intervals shown in plots were computed by assuming M independent p-values, uniformly distributed on [0,1]. The $$k^{th}$$ largest P value from this distribution is the  $k^{th}$ order statistic, which is known to have a Beta $$(k, M-k-1)$$  distribution. The mean of this distribution is $$\frac{k}{M+1}$$. Thus, at point $$log(\frac{k}{M+1})$$ on the horizontal and vertical axis, error bars can be plotted as the $$(log)95%$$ probability interval of this Beta distribution.
 
 Here was my matlab coded for BMD GWAS QQplot.
 
