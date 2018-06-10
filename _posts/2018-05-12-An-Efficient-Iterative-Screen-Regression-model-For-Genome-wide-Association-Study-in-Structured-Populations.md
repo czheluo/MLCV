@@ -363,7 +363,7 @@ Comparison of computing time of ISR and others methods in the third simulation s
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/bar_time.jpg" | prepend: site.baseurl }}"></div>
  
-#### If you have interested in our model or any question and omission (bug). Please feel free to contact us.
+#### If you are interested in our model or any question and omission (bug). Please feel free to contact us.
 
 * [Meng Luo](https://github.com/mengluoML)
 * [Shiliang Gu](http://www.wheatlab-yzu.com/article_show.asp?id=2184)
