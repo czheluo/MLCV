@@ -13,11 +13,8 @@ tags: [GS, ISR, Bayes alphabetic model, ]
 ## Iterative Screen Regression model (ISR)
 
 As mentioned [before](http://mengluocv.me/blog/2018/05/12/An-Efficient-Iterative-Screen-Regression-model-For-Genome-wide-Association-Study-in-Structured-Populations/) that our method, here, was used to genomic prediction.
-
 <div align="center"><img src="{{ "/images/Blog/GS/ISRGS.jpg" | prepend: site.baseurl }}"></div>
-
 <p style="text-align: center;"> Schematic overview of model-based iterative screen regression for GS </p>
-
 ## Simulation
 
 I used genotypes from an existing cattle GWAS [data set](http://www.g3journal.org/content/5/4/615) with
@@ -357,14 +354,10 @@ t1 <- f(time1)
 t1
 ```
 
-Scenario I
-
+* Scenario I
 <div align="center"><img src="{{ "/images/Blog/GS/I.jpg" | prepend: site.baseurl }}"></div>
-
-Scenario II
-
+* Scenario II
 <div align="center"><img src="{{ "/images/Blog/GS/II.jpg" | prepend: site.baseurl }}"></div>
-
 ## Real data applications
 
 - Cattle data
@@ -375,9 +368,7 @@ Scenario II
 <div align="center"><img src="{{ "/images/Blog/GS/cattleGL.jpg" | prepend: site.baseurl }}"></div>
 * Mice data (CFW)
 Another outbred CFW (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to analysis.
-
 <div align="center"><img src="{{ "/images/Blog/GS/mice.jpg" | prepend: site.baseurl }}"></div>
-
 ```matlab
 % coded for MSE BOXPLOT
 clear,clc;
