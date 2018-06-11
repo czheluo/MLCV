@@ -436,3 +436,9 @@ c = get(gca, 'Children');
 legend(c(2:8),'DPR','BayesB','BayesA','Bayes LASSO','BSLMM','rrBLUP','BayesC');
 %clear h
 ```
+
+#### If you are interested in our model or any question and omission (bug). Please feel free to contact us.
+
+* [Meng Luo](https://github.com/mengluoML)
+
+
