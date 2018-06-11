@@ -3,7 +3,7 @@ layout: post
 comments: true
 enable_mathjax: true
 output: html_document
-tags: [GWAS, ISR, Epistasis,Genetic Mapping;Gene–gene interaction;Exhaustive Search]
+tags: [GWAS, ISR, Epistasis, Genetic Mapping, Gene–gene interaction, Exhaustive Search]
 ---
 
 <script type="text/javascript" async
