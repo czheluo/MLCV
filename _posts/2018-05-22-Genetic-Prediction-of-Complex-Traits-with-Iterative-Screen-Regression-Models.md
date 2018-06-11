@@ -13,7 +13,7 @@ tags: [GS, ISR, Bayes alphabetic model, ]
 ## Iterative Screen Regression model (ISR)
 
 As mentioned [before](http://mengluocv.me/blog/2018/05/12/An-Efficient-Iterative-Screen-Regression-model-For-Genome-wide-Association-Study-in-Structured-Populations/) that our method, here, was used to genomic prediction.
-<div align="center"><img src="{{ "/images/Blog/GS/ISRGS.jpg" | prepend: site.baseurl }}"></div>
+<div style="align:center;width:70;"><img src="{{ "/images/Blog/GS/ISRGS.jpg" | prepend: site.baseurl }}"></div>
 <p style="text-align: center;"> Schematic overview of model-based iterative screen regression for GS </p>
 ## Simulation
 
