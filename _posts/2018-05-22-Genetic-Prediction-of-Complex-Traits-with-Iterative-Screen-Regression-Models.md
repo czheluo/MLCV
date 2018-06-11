@@ -14,7 +14,7 @@ tags: [GS, ISR, Bayes alphabetic model, ]
 
 As mentioned [before](http://mengluocv.me/blog/2018/05/12/An-Efficient-Iterative-Screen-Regression-model-For-Genome-wide-Association-Study-in-Structured-Populations/) that our method, here, was used to genomic prediction.
 
-<div align="center"><img src="{{ "/images/Blog/GWAS/ISRGS.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/GS/ISRGS.jpg" | prepend: site.baseurl }}"></div>
 
 <p style="text-align: center;"> Schematic overview of model-based iterative screen regression for GS </p>
 
@@ -359,11 +359,11 @@ t1
 
 Scenario I
 
-<div align="center"><img src="{{ "/images/Blog/GWAS/I.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/GS/I.jpg" | prepend: site.baseurl }}"></div>
 
 Scenario II
 
-<div align="center"><img src="{{ "/images/Blog/GWAS/II.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/GS/II.jpg" | prepend: site.baseurl }}"></div>
 
 ## Real data applications
 
@@ -372,11 +372,11 @@ Scenario II
 - Rice data
   The rice data consists of 1,132 samples and 464,831 SNPs after removing SNPs that have a genotype call rate <95%, or an MAF < 0.05. For the remaining SNPs, I also imputed missing genotypes with the estimated mean genotype of that SNP. Only one trait geain length(GL) was used to analysis.
 
-<div align="center"><img src="{{ "/images/Blog/GWAS/cattleGL.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/GS/cattleGL.jpg" | prepend: site.baseurl }}"></div>
 * Mice data (CFW)
 Another outbred CFW (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to analysis.
 
-<div align="center"><img src="{{ "/images/Blog/GWAS/mice.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/GS/mice.jpg" | prepend: site.baseurl }}"></div>
 
 ```matlab
 % coded for MSE BOXPLOT
