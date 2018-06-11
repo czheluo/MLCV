@@ -15,7 +15,7 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
 		<span class="post-meta__tags">
 		    on {% for tag in post.tags %}
 		    |
-		    <a href="{{ site.baseurl }}/tags/#{{ tag }}">
+		    <a href="{{ site.baseurl }}/tags/#{{ tag }}" style="color:#ff9966">
 			{{ tag }}
 		    </a> {% endfor %}
 		    |
@@ -28,10 +28,10 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
 		</a>
             </h2>
 
-            <p class="excerpt" style="text-align:justify;">{{ post.excerpt | strip_html | truncatewords:100}}</p>
+            <p class="excerpt" style="text-align:justify;color:#bf4040;">{{ post.excerpt | strip_html | truncatewords:100}}</p>
 	    <br>
             <span class="excerpt">
-		<a href="{{ site.baseurl }}{{ post.url }}" target="_blank">{{ site.excerpt_link }}</a>
+		<a href="{{ site.baseurl }}{{ post.url }}" target="_blank" style="color:#996600">{{ site.excerpt_link }}</a>
         </class>
 
         <hr class="post-list__divider">
