@@ -310,3 +310,10 @@ color = vvlgrey
 ```
 
 <div align="center"><img src="{{ "/images/Blog/EGWAS/RICE.jpg" | prepend: site.baseurl }}"></div>
+
+
+#### If you are interested in our model or any question and omission (bug). Please feel free to contact us.
+
+* [Meng Luo](https://github.com/mengluoML)
+
+
