@@ -14,7 +14,7 @@ tags: [GWAS, ISR, Mult-loci model, Single-locus model,Simulation]
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML">
 </script>
 
-# Iterative Screen Regression model (ISR)
+## Iterative Screen Regression model (ISR)
 
 Here we introduce a new unique variable selection procedure of regression statistic method, call Iterative screening regression(ISR). Where we formulated a new regression information criterion (RIC) and used this criterion as the objective function of the entire variable screen process. We evaluate various model selection criteria through simulations, which suggest that the proposed ISR method performs well in terms of FDR and power. Finally, we show the usefulness of our approach by applying it to A. thaliana and mouse data.
 
@@ -22,7 +22,7 @@ Here we introduce a new unique variable selection procedure of regression statis
 
 <p style="text-align: center;"> Fig. 1 Schematic overview of model-based iterative screen regression for GWAS </p>
 
-# Simulation
+## Simulation
 
 Human dataset derived from [PLINK](http://gigadb.org/dataset/view/id/100094/) included two real human genotype datasets, the first dataset included 1000 samples and 100000 makers (SNPs) over all chromosomes. The second included 10000 samples(6000 cases and 4000 control) and 88058 markers (SNPs), and only included in 19, 20, 21, and 22 chromosomes. Also, another outbred [CFW](https://datadryad.org/resource/doi:10.5061/dryad.2rs41) (Carworth Farms White) mice population that including a set of 92,734 single-nucleotide polymorphism markers which were genotyped 1,161 individuals were also used to perform one simulation experiments. well, all simulation both setting the heritability was 0.5. The first 100 phenotypes used all CFW mice dataset that including 100 markers were randomly selected as causal loci, respectively. We also assigned an additive effect randomly drawn from a standard normal distribution and added a random environmental term, where the  $h^2$ of the simulated traits only was 0.5, here. The second and third 100 phenotypes used human dataset that also including 100 markers were randomly selected as causal loci, respectively. Where the $h^2$ of the simulated traits (complex traits) only was 0.5.
 
@@ -43,7 +43,7 @@ Human:
 $$Y_j=\displaystyle\sum_{i=1}^{100} X_i\beta_i+ \varepsilon,\varepsilon \backsim MVN_n(0,\sigma_g^2((1-h^2)/h^2)),j=1,2,3,....10000.$$
 
 
-# Power versus FDR and TPR (Type one error)
+## Power versus FDR and TPR (Type one error)
 
 How to define the power versus FDR and TPR, just saw [here](https://en.wikipedia.org/wiki/Sensitivity_and_specificity). As following was the confusion matrix.
 
@@ -54,36 +54,36 @@ How to define the power versus FDR and TPR, just saw [here](https://en.wikipedia
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/power.jpg" | prepend: site.baseurl }}"></div>
 
-#### Receiver Operating Characteristic curves of simulations
+### Receiver Operating Characteristic curves of simulations
 Receiver Operating Characteristic (ROC) curves, demonstrating the trade-off between false positives and true positives, using simulated data based on the RA data. Lines trending toward the upper left corner denote better ROC curves while those in the opposite direction correspond to poorer methods.
 
-#### Mice simulation result
+### Mice simulation result
 A receiver operating characteristic curve was a plot of the statistical power against the controlled FDR and FPR(type I error). Where we also calculated the AUC value, smaller AUC value indicated that method batter perform.
 
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/FDR_TPIALL.jpg" | prepend: site.baseurl }}"></div>
 
-#### Human simulation result
+### Human simulation result
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/humanpower.jpg" | prepend: site.baseurl }}"></div>
 Statistical power was defined as the proportion of simulated markers detected at cost defined by either False Discovery Rate (FDR) or False Positive Rate (FPR, Type I error). a The two types of Receiver Operating Characteristic (ROC) curves are displayed separately for TPR (true positive rate, power) versus FDR and FPR (the two simulations of Scenarios Ⅴ (1-2)). b The Area Under the Curves (AUC) are also displayed separately for TPR (true positive rate, power) versus FDR and FPR for 100 simulations. Four GWAS methods (ISR, FarmCPU, FaSTLMM, and PLINK-Fisher) were compared with phenotypes simulated from real genotypes in human. The simulated phenotypes had a heritability of 50%, controlled by 100 SNPs. These markers were randomly sampled from the available 100000 (88025) Single Nucleotide Polymorphism (SNPs). b .To specify the multiple comparison procedures using Least Significant Difference (LSD) after ANOVA. Here, $*$ represent a significant level of 0.05; $**$ represent a significant level of 0.01; $***$ represent a significant level of 0.001.
 
-### Estimated Effect (PVE)
+## Estimated Effect (PVE)
 
 Computing proportion of variance in phenotype explained by a given SNP (PVE) :
 
 $$PVE=\frac{\beta^2Var(X)}{ Var(Y)}=\frac{\beta^2Var(X)}{\beta^2Var(X)+\sigma^2}\approx \frac{Var(X\beta)}{ Var(Y)}$$
 
-#### Mice
+### Mice
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/MICEPVE.jpg" | prepend: site.baseurl }}"></div>
 
 a The distribution of all simulated effects (all true effect) and the distribution of effects of loci identified (100 casual loci within 100 simulations, and only true positive) by six methods. The solid line shows the effect size by different methods and the phenotype with 50% of PVE. The bottom boxplot was explained the variance of the loci effect estimated by ISR, FASTmrEMMA, FarmCPU, GEMMA, and CMLM within the 100 simulations. Performance of estimating PVE is measured by the root of mean square error (RMSE), where a lower value indicates better performance. The true PVEs are shown as the horizontal dash lines.
-#### Human
+### Human
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/HUMANPVE.jpg" | prepend: site.baseurl }}"></div>
-a The explained variance of the casual loci effects estimated by MLLM, FarmCPU, FaSTLMM, and PLINK-Fisher within the 100 simulations (The two simulations of Scenarios V (1-2)). b The distribution of all simulated effects (True Effect, black line) and the distribution of effects of loci identified (after 0.05 Bonferroni correction) by ISR (906 loci and 3461 loci), FarmCPU (760 loci and 3037 loci), FaSTLMM (433 loci and 2297 loci) and PLINK-Fisher (446 loci and 4041), respectively (The two simulations of Scenarios V (1-2)).
-# Real dataset
+a The explained variance of the casual loci effects estimated by ISR, FarmCPU, FaSTLMM, and PLINK-Fisher within the 100 simulations (The two simulations of Scenarios V (1-2)). b The distribution of all simulated effects (True Effect, black line) and the distribution of effects of loci identified (after 0.05 Bonferroni correction) by ISR (906 loci and 3461 loci), FarmCPU (760 loci and 3037 loci), FaSTLMM (433 loci and 2297 loci) and PLINK-Fisher (446 loci and 4041), respectively (The two simulations of Scenarios V (1-2)).
+## Real dataset
 ### LD(Linkage Disequilibrium)
 Locuszoom plots for genome-wide significant SNP both found by ISR and FASTmrEMMA. The locuszoom plots showing the zoom in of the most significant SNP both found by FASTmrEMMA and ISR two methods. The points for each SNP are colored by the level of the linkage disequilibrium (r2) with the index SNP, the SNP with the highest association to the quantitative trait meristem zone length. Following was the matlab code for locuszoom plot.
 
@@ -274,7 +274,7 @@ for j=1:1:(phe-2)
  text(xg(19),-log10(0.05/nsnp),num2str(5.39E-07))
 end
 ```
-#### R code for permutation in FarmCPU
+## R code for permutation in FarmCPU
 We calculated a significance threshold via permutation, which is a standard approach for QTL mapping in mice that controls for the type I error rate (P<0.1, THE RED DASHLINE IN VISUILIZATION PLOT).
 ```r
 p <- matrix(NA,92734,1000)
@@ -310,7 +310,7 @@ abline(v=sort(p$V1)[900],col='red')
 <div align="center"><img src="{{ "/images/Blog/GWAS/bmdman.png" | prepend: site.baseurl }}"></div>
 
 ### QQ plot
-Error bars in quantile-quantile plots. The quantile-quantile plot 95% confidence intervals shown in plots were computed by assuming M independent p-values, uniformly distributed on [0,1]. The $$k^{th}$$ largest P value from this distribution is the  $k^{th}$ order statistic, which is known to have a Beta $$(k, M-k-1)$$  distribution. The mean of this distribution is $$\frac{k}{M+1}$$. Thus, at point $$log(\frac{k}{M+1})$$ on the horizontal and vertical axis, error bars can be plotted as the $$(log)95%$$ probability interval of this Beta distribution.
+Error bars in quantile-quantile plots. The quantile-quantile plot 95% confidence intervals shown in plots were computed by assuming M independent p-values, uniformly distributed on [0,1]. The $$k^{th}$$ largest P value from this distribution is the  $$k^{th}$$ order statistic, which is known to have a Beta $$(k, M-k-1)$$  distribution. The mean of this distribution is $$\frac{k}{M+1}$$. Thus, at point $$log(\frac{k}{M+1})$$ on the horizontal and vertical axis, error bars can be plotted as the $$(log)95%$$ probability interval of this Beta distribution.
 
 Here was my matlab coded for BMD GWAS QQplot.
 
