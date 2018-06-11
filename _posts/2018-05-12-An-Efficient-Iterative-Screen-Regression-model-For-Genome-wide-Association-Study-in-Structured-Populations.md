@@ -20,7 +20,7 @@ Here we introduce a new unique variable selection procedure of regression statis
 
 <div align="center"><img src="{{ "/images/Blog/GWAS/ISRGWAS.jpg" | prepend: site.baseurl }}"></div>
 
-<p style="text-align: center;"> Fig. 1 Schematic overview of model-based iterative screen regression for GWAS </p>
+<p style="text-align: center;"> Schematic overview of model-based iterative screen regression for GWAS </p>
 
 ## Simulation
 
