@@ -8,7 +8,7 @@ Explore by: <a href="/archive">Date</a> | <a href="/tags">Tags</a>
 	{% for post in paginator.posts %}
 	<li>
             <div class="post-list__meta">
-		<time datetime="{{ post.date | date: "%b %d, %Y" }}" class="post-list__meta--date date">
+		<time datetime="{{ post.date | date: "%b %d, %Y" }}" class="post-list__meta--date date" style="color:#0099ff">
 		    {{ post.date | date: "%b %d, %Y" }}
 		</time>
 		&#8226;
