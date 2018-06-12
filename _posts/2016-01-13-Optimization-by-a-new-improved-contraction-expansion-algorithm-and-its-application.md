@@ -3,7 +3,7 @@ layout: post
 comments: true
 enable_mathjax: true
 output: html_document
-tags: [Nonlinear equation, Parameter estimation, Optimization,Contraction-expansion algorithm, Numerical differentiation]
+tags: [Nonlinear equation, Parameter estimation, Optimization,Contraction-expansion algorithm, Numerical differentiation, Fitting]
 ---
 
 <script type="text/javascript" async
