@@ -6,7 +6,7 @@ tags: [advice, notes]
 
 # PhD program application and interview tips and advice (with sample interview questions)
 
-I recently graduated with my PhD in Bioinformatics and Integrative Genomics from Harvard University and am reflecting on my time as a grad student. I dug up some old notes from when I was still in the application and interview stage and thought they may be useful for students currently going through the application process. 
+
 
 A little background about my application journey: I applied to bioinformatics PhD programs during my senior year of undergrad at Johns Hopkins University where I studied biomedical engineering and applied math. I applied, interviewed, and was eventually accepted by Harvard BIG, Stanford BMI, Columbia C2B2, Yale CBB, Princeton QCB, and MIT CSBI, and ended up choosing Harvard BIG. As a grad student at Harvard BIG, I have also looked through applications and hosted social events for interviewees. Based on my experiences, I have compiled these application and interview tips. Of course, the relevance of these tips will depend greatly on your field of study and whether you are applying to a program or an individual lab. In this post, I will focus on what I believe is most relevant for students in my field and what I have experience in, which is generally true for programs in the life sciences.
 
