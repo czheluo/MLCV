@@ -2034,3 +2034,21 @@ pre.highlight code,
 	border-top: 1px solid rgba(0, 0, 0, 0.14);
  }
 
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
