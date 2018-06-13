@@ -41,6 +41,7 @@ As following were what I have learned from the website in biostatistics, bioinfo
 * [Welcome trust sanger institute](https://www.sanger.ac.uk/).
 * [Harvard T.H. Chan School of Public Health/ Department of Biostatistics](https://www.hsph.harvard.edu/biostatistics/).
 * [Ritchie Lab](https://ritchielab.org/).
+* [Well sanger institute](https://www.sanger.ac.uk/)
 
 ### Blogs
 * [BROAD INSTITUTE](https://www.broadinstitute.org/news?type=blog).
@@ -53,6 +54,7 @@ As following were what I have learned from the website in biostatistics, bioinfo
 * [Machine Learning Blog](https://blogs.technet.microsoft.com/machinelearning/).
 * [Deep Learning Blog](https://blogs.technet.microsoft.com/machinelearning/tag/deep-learning/).
 * [WES BOS Blog](https://wesbos.com/blog/).
+* [Well sanger institute](https://sangerinstitute.blog/)
 
 ### Tools
 * [Bioconductor](http://www.bioconductor.org/).
