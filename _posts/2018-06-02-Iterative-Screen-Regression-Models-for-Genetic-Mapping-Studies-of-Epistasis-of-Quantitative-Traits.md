@@ -33,7 +33,7 @@ Specifically, we set ρ = {0.5, 0.8} and choose P1/P2 = 10/10 (scenario I), 50/1
 
 ### Estimating and identifying epistatic effects
 
-<div align="center"><img src="{{ "/images/Blog/EGWAS/HUAMN.jpg" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/EGWAS/HUMAN.jpg" | prepend: site.baseurl }}"></div>
 Empirical power to detect simulated causal interacting makers and estimating their marginal PVE. Groups 1 and 2 causal markers are colored in light red and light blue, respectively. These figures are based on a broad-sense heritability level of H2 = 0.6 and parameter ρ = 0.8, estimated with 100 replicates. Here, ρ = 0.8 was used to determine the portion of broad-sense heritability contributed by interaction effects. (A) shows the power of MAPIT to identify SNPs in each causal group under significance level α = 0.05. The lines represent 95% variability due to resampling error. (B) shows boxplots of the marginal PVE estimates for the group 1 and 2 causal SNPs from MAPIT for the four simulation scenarios. The true PVEs per causal SNP (0.012 for the group 1 SNPs; 0.012, 0.006, 0.0024, and 0.0012 for the Group 2 SNPs) are shown as dashed grey horizontal lines.
 
 ### Identifying pairwise interactions
