@@ -4,7 +4,7 @@ comments: true
 tags: [Lab, Statistical, Bioinformatics, Courses, Blogs]
 ---
 
-# What i have learned from.
+# What I have learned from.
 
 As following were what I have learned from the website in biostatistics, bioinformatics and others research areas (Blogs).
 ### Statistical Genetics
