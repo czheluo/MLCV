@@ -27,11 +27,11 @@ tags: [Nonlinear equation, Parameter estimation, Optimization,Contraction-expans
 
 <div align="center"><img src="{{ "/images/Blog/fitting/C.jpg" | prepend: site.baseurl }}"></div>
 
-> Calculate the searching points in turn to find the step points with minimum Q-value as the next searching center points$$b_j^(1)$$.
+> Calculate the searching points in turn to find the step points with minimum Q-value as the next searching center points$$b_j^{(1)}$$.
 
 <div align="center"><img src="{{ "/images/Blog/fitting/C1.jpg" | prepend: site.baseurl }}"></div>
 
-- Because Q usually is not the monotone function of b, it usually cannot get the optimal parameters after contraction stage, and it always turns up $$Q_min^(C)>Q_min$$.
+- Because Q usually is not the monotone function of b, it usually cannot get the optimal parameters after contraction stage, and it always turns up $$Q_{min}^{(C)}>Q_(min)$$.
 
 <div align="center"><img src="{{ "/images/Blog/fitting/4.gif" | prepend: site.baseurl }}"></div>
 
@@ -44,32 +44,32 @@ tags: [Nonlinear equation, Parameter estimation, Optimization,Contraction-expans
 
 <div align="center"><img src="{{ "/images/Blog/fitting/ND.jpg" | prepend: site.baseurl }}"></div>
 
-When the surface and curve fitting involve multi-parameter, the approximate partial derivative of the j-th parameter of the formula in the optimal parameter point $$b^(0)$$：
+When the surface and curve fitting involve multi-parameter, the approximate partial derivative of the j-th parameter of the formula in the optimal parameter point $$b^{(0)}$$：
 
 <div align="center"><img src="{{ "/images/Blog/fitting/b.jpg" | prepend: site.baseurl }}"></div>
 
-- Improved Gauss-Newton:
+## Improved Gauss-Newton:
 
 $$ \vartriangle = A^{-1}K \Longrightarrow \vartriangle \Longrightarrow b = b^{(0)} + \vartriangle $$
 
-### 8 datasets with higher level of difficulty
+## 8 datasets with higher level of difficulty
 
 <div align="center"><img src="{{ "/images/Blog/fitting/table.jpg" | prepend: site.baseurl }}"></div>
 
-> The certified results of NIST and estimated by improved C-E algorithm for 7 datasets
+### The certified results of NIST and estimated by improved C-E algorithm for 7 datasets
 
 <div align="center"><img src="{{ "/images/Blog/fitting/table1.jpg" | prepend: site.baseurl }}"></div>
 
-- The curve fitting figure of result MGH10, Thurber and Eckerle4
+### The curve fitting figure of result MGH10, Thurber and Eckerle4
 
 <div align="center"><img src="{{ "/images/Blog/fitting/FIG1.jpg" | prepend: site.baseurl }}"></div>
 
-- Global and local optimal for the problem (7)
+### Global and local optimal for the problem (7)
   <div align="center"><img src="{{ "/images/Blog/fitting/surfacetable.jpg" | prepend: site.baseurl }}"></div>
 
 <div align="center"><img src="{{ "/images/Blog/fitting/surface.jpg" | prepend: site.baseurl }}"></div>
 
-- The eighth test problem
+### The eighth test problem
 
 <div align="center"><img src="{{ "/images/Blog/fitting/test8.jpg" | prepend: site.baseurl }}"></div>
 
@@ -80,7 +80,7 @@ $$ \vartriangle = A^{-1}K \Longrightarrow \vartriangle \Longrightarrow b = b^{(0
 
 <div align="center"><img src="{{ "/images/Blog/fitting/sda1.jpg" | prepend: site.baseurl }}"></div>
 
-#### _Some of those test data are very hard, and may never get right answers without using 1stOpt(Auto2Fit). Even for 1stOpt(Auto2Fit), it does not ensure every run will be successful. … In some cases, you may try to change the control parameter of ‘Population Size’ (1stOpt team said)_ They have suggested that to solve these problems one should use Global Levenberg-Marquard or Global BFGS method.
+> _Some of those test data are very hard, and may never get right answers without using 1stOpt(Auto2Fit). Even for 1stOpt(Auto2Fit), it does not ensure every run will be successful. … In some cases, you may try to change the control parameter of ‘Population Size’ (1stOpt team said)_ They have suggested that to solve these problems one should use Global Levenberg-Marquard or Global BFGS method.
 
 ## Others application
 
