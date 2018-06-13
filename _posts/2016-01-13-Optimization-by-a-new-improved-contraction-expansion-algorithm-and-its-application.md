@@ -179,11 +179,12 @@ disp(rst)
 
 <div align="center"><img src="{{ "/images/Blog/fitting/litian.jpg" | prepend: site.baseurl }}"></div>
 
-## All kinds of figure solved by CE-Algorithm
+## All kinds of Models perfectly solved by CE-Algorithm 
 
 <div align="center"><img src="{{ "/images/Blog/fitting/5.gif" | prepend: site.baseurl }}"></div>
 
-#### If you have any question for our algorithm, and Found any omission (bug) . Please feel free to contact us.
+
+#### If you are interested in our algorithm, or Found any omission (bug) . Please feel free to contact us.
 
 - [Meng Luo](https://github.com/mengluoML)
 - [Shiliang Gu](http://www.wheatlab-yzu.com/article_show.asp?id=2184)
