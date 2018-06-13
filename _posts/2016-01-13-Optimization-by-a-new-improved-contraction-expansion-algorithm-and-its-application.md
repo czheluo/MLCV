@@ -190,5 +190,3 @@ disp(rst)
 - [Shiliang Gu](http://www.wheatlab-yzu.com/article_show.asp?id=2184)
 
 
-<div align="center"><img src="{{ "http://www.math.uwaterloo.ca/tsp/data/ml/mona-lisa100K.gif" | prepend: site.baseurl }}"></div>
-
