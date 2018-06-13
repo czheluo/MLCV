@@ -24,9 +24,6 @@ tags: [Nonlinear equation, Parameter estimation, Optimization,Contraction-expans
 
 > Contraction stage constitutes an initial searching domain begin with initial values and shrinks the searching range constantly to get the optimal parameters.
 
----
-
----
 
 <div align="center"><img src="{{ "/images/Blog/fitting/C.jpg" | prepend: site.baseurl }}"></div>
 
@@ -190,3 +187,6 @@ disp(rst)
 
 - [Meng Luo](https://github.com/mengluoML)
 - [Shiliang Gu](http://www.wheatlab-yzu.com/article_show.asp?id=2184)
+
+
+
