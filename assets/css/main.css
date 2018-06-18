@@ -2052,3 +2052,13 @@ pre.highlight code,
     clear: both;
 }
 
+	.p19 {line-height: 200%;
+	font-weight:bold;
+			color:#000000;
+			background-color: #00ffff;
+    width: 160px;
+    padding: 15px;
+    font-weight:bold;
+	font-size:20px;}
+
+
