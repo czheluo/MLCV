@@ -23,7 +23,7 @@ As mentioned [before](http://mengluocv.me/blog/2018/05/12/An-Efficient-Iterative
 To test the power of MAPIT, I again consider simulation designs similar to those proposed by previous [epistatic analysis studies](https://www.sciencedirect.com/science/article/pii/S0002929710003782). First,I assume that the broad-sense heritability is known ($$H^2 = 0.6$$). Next, I randomly chosed 1000~1008 from the chromosome of all control cases from the human data set (i.e. n ≈ 1,000~2,000 and p ≈ 1,000~1,008) to simulate continuous phenotypes that mirror genetic architectures affected by a combination of additive and pairwise epistatic effects. Specifically, I randomly choose different causal SNPs that directly affect the phenotype and classify the causal variants into TWO groups: (1) a set of additive SNPs; (2) a another set of interaction SNPs.
 The additive effect sizes of all causal SNPs again come from a standard normal distribution or β ∼ MVN(0, I). Next, I create a separate matrix $$W$$ which holds the pairwise interactions of all causal the SNPs. These SNPs have effect sizes also drawn as α ∼ MVN(0, I). We scale both the additive and pairwise genetic effects so that collectively they explain a fixed proportion of genetic variance. Namely, the additive effects make up ρ%, while the pairwise interactions make up the remaining (1 − ρ)%. Once we obtain the final effect sizes for all causal SNPs, we draw errors to achieve the target $$H^2$$. The phenotypes are then created by summing all effects using simulation models: y = Xβ + Wα + ε, where $$X$$ is the additive genotype matrix, $$W$$ is the epistasis genotype matrix.
 
-- I consider a few scenarios that depend on two parameters:
+### I consider a few scenarios that depend on two parameters:
 
 > (1 − ρ), which measures the portion of $$H^2$$ that is contributed by the interaction effects of the second groups of causal SNPs. Specifically, the phenotypic variance explained (PVE) by the additive genetic effects is said to be $$V(Xβ) = ρH^2$$, while the PVE of the pairwise epistatic genetic effects is given as $$V(Wα) = (1-ρ)H^2$$.
 
@@ -312,7 +312,8 @@ color = vvlgrey
 <div align="center"><img src="{{ "/images/Blog/EGWAS/RICE.jpg" | prepend: site.baseurl }}"></div>
 
 
-#### If you are interested in our model or any question and omission (bug). Please feel free to contact us.
+
+#### If you are interested in our model or any question and omission (bug). Please feel free to contact me.
 
 * [Meng Luo](https://github.com/mengluoML)
 
