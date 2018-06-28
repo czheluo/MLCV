@@ -81,7 +81,7 @@ The EMF-CE performance was compared with those of several computationally compar
 
 ## EMF-CE CODE
 
-```MATLAB
+```matlab
 clear,clc
 %x=xlsread('tsp','result1','u1:v200');
 %x=xlsread('tspt1 (2)','2','ae2:af226');
