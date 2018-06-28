@@ -28,13 +28,13 @@ The traveling salesman problem (TSP) is well known the classical and fundamental
 
 > National TSPs
 
-| [![China - 71,009 Cities](/images/national/chpoints.gif)](/images/national/chpoints.gif) | [![Egypt - 7,146 Cities](/images/national/egpoints.gif)](/images/national/egpoints.gif) | [![Greece - 9,882 Cities](/images/national/grpoints.gif)](/images/national/grpoints.gif) |
-| :--------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------: |
-|       [China - 71,009 Cities](http://www.math.uwaterloo.ca/tsp/world/ch71009.tsp)        |        [Egypt - 7,146 Cities](http://www.math.uwaterloo.ca/tsp/world/eg7146.tsp)        |        [Greece - 9,882 Cities](http://www.math.uwaterloo.ca/tsp/world/gr9882.tsp)        |
+| [![China - 71,009 Cities](/images/Blog/TSP/national/chpoints.gif)](/images/Blog/TSP/national/chpoints.gif) | [![Egypt - 7,146 Cities](/images/Blog/TSP/national/egpoints.gif)](/images/Blog/TSP/national/egpoints.gif) | [![Greece - 9,882 Cities](/images/Blog/TSP/national/grpoints.gif)](/images/Blog/TSP/national/grpoints.gif) |
+| :--------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
+|                [China - 71,009 Cities](http://www.math.uwaterloo.ca/tsp/world/ch71009.tsp)                 |                 [Egypt - 7,146 Cities](http://www.math.uwaterloo.ca/tsp/world/eg7146.tsp)                 |                 [Greece - 9,882 Cities](http://www.math.uwaterloo.ca/tsp/world/gr9882.tsp)                 |
 
 ### The best known results for the TSP Art instances are given in the table below. I would be happy to post any improvements you find!
 
-<div align="center"><img src="{{ "/images/TSP/BlogTSPbestartTSP.png" | prepend: site.baseurl }}"></div>
+<div align="center"><img src="{{ "/images/Blog/TSP/TSPbestartTSP.png" | prepend: site.baseurl }}"></div>
 
 ## EMF-CE algorithm
 
