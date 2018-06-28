@@ -83,15 +83,11 @@ The EMF-CE performance was compared with those of several computationally compar
 
 ```matlab
 clear,clc
-%x=xlsread('tsp','result1','u1:v200');
-%x=xlsread('tspt1 (2)','2','ae2:af226');
-%x=xlsread('D:\MATLAB\TSP-GSL\2016new\20160805\ALL tsp\tspt1 (2).xls','2','ae2:af226');
-[Dimension,NodeCoord,NodeWeight,Name]=FileInput('lin318.tsp');%gr120,rat783,kroB100d493,pa561,ali535gil262,linhp318gr431gr202?d493,d198gr120berlin52eil51eil101gr120,eil101gr666d493%%u724pr226,u574,rd400,pr264,rat195,u159,kroB150,pr439,bier127,kroE100,pr76,pr439%gil262,st70,rat99,tsp225,rd100,gil262
+#inputdata
+[Dimension,NodeCoord,NodeWeight,Name]=FileInput('lin318.tsp');%gr120,rat783
 x=NodeCoord(:,2:3);
-%x=xlsread('tspt1 (2)','5','b2:c30');
 x1=x;
-tspm=42220;%1610;%9000;%22150;%35660;%15370;%2020;%2410;%6120;%42400;%1940;%1624;%968;%35600;%2580;%15350;%14379;%629;%22141
-%538;%675;%7542;%426;%9073;%630;%72;%1610;%647;%48300;%35700;%42280;%118295;%;%80375;%2344;%42080;%96782;%1611;%59031;%44303;%22100;%21295;%37500;%37500;%37980;%15600;%42240;%49136;%58536;%2340;%42080;%73684;%26130;%26530;%118295;%20751;%108160;%107573;%107217;%2300;%677.06;%7910.4;%677.06;%675;%3875.29;%1100;%25294;%8538;%7544.3;%6528;%6110;%538;%426;%126645.93;%14379;%21285;%2579;%2579;%1112.4;
+tspm=42220;
 [n,k]=size(x);
 cp=randperm(n);
 x=x(cp,:);
