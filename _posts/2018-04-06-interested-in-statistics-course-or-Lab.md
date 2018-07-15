@@ -55,7 +55,7 @@ As following were what I have learned from the website in biostatistics, bioinfo
 * [Deep Learning Blog](https://blogs.technet.microsoft.com/machinelearning/tag/deep-learning/).
 * [WES BOS Blog](https://wesbos.com/blog/).
 * [Well sanger institute](https://sangerinstitute.blog/)
-
+* [Perl blogs](http://blogs.perl.org/)
 ### Tools
 * [Bioconductor](http://www.bioconductor.org/).
 * [Github](https://github.com/).
