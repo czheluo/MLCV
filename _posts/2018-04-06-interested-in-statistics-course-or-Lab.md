@@ -42,7 +42,7 @@ As following were what I have learned from the website in biostatistics, bioinfo
 * [Harvard T.H. Chan School of Public Health/ Department of Biostatistics](https://www.hsph.harvard.edu/biostatistics/).
 * [Ritchie Lab](https://ritchielab.org/).
 * [Well sanger institute](https://www.sanger.ac.uk/)
-
+* [Langmead lab](http://www.langmead-lab.org)
 ### Blogs
 * [BROAD INSTITUTE](https://www.broadinstitute.org/news?type=blog).
 * [JEFworks](http://jef.works/blog/).
