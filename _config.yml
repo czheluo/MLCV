@@ -53,6 +53,9 @@ kramdown:
   input: GFM
   # do not replace newlines by <br>s
   hard_wrap: false
+
+Source: jekyll
+Source-Version: 3.8.3+dfsg-3.1
 gems: ['jekyll-paginate', 'jekyll-compose', 'jemoji']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock']
 #social:
