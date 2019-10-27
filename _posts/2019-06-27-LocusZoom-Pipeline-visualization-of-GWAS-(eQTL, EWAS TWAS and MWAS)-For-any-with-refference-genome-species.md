@@ -30,7 +30,7 @@ tags: [Data visualization, GWAS, eQTL]
 
 > The [refFlat](https://genome-source.gi.ucsc.edu/gitlist/kent.git/raw/master/src/hg/lib/refFlat.as) table mirrors what is currently supplied by the UCSC database, [format](https://genome-source.gi.ucsc.edu/gitlist/kent.git/raw/master/src/hg/lib/refFlat.as). You need to qsub my Pipeline, cause it will take a while for get the reffalt table, if your species with a big reference genome, then will take more time to get the data result. my demo was the  [barley](ftp://ftp.ensemblgenomes.org/pub/plants/release-44/gff3/hordeum_vulgare) specie and needs more than five hours for now. And i will add a simple that get the refflab quickly than this pipeline times in the futher in Python Script.
 
-```
+```R
 # Pipeline Usage
 
 $ perl refflat.pipeline.pl
@@ -52,18 +52,18 @@ Usage:
 ```
 #### QUEUE THE Pipeline 
 
-```
+```R
 $ nohup qsub perl refflat.pipeline.pl -chrlist ref.chrlist -gff ref.gff3 -vcf pop.recode.vcf -out ./ &
 ```
 > or (which running local node in your machine)
 
-```
+```R
 $ nohup perl refflat.pipeline.pl -chrlist ref.chrlist -gff ref.gff3 -vcf pop.recode.vcf -out ./ &
 ```
 
 > or a new simplest way to get the reflattable, just using convert command  lines
 
-```
+```R
 
 
 ```
@@ -71,7 +71,7 @@ $ nohup perl refflat.pipeline.pl -chrlist ref.chrlist -gff ref.gff3 -vcf pop.rec
 >The pipeline will generate snp.pos, snp.set and refflat.tbale files for you to build YOUR database, excuting as following, and for details click [here](https://genome.sph.umich.edu/wiki/LocusZoom_Standalone).
 
 
-```
+```R
 $ python dbmeister.py --db locuszoom_bl38.db --snp_pos snp.pos  
 $ python dbmeister.py --db locuszoom_bl38.db --refflat refflat.table  
 $ python dbmeister.py --db locuszoom_bl38.db --snp_set snp.set
@@ -80,24 +80,24 @@ $ python dbmeister.py --db locuszoom_bl38.db --snp_set snp.set
 ### Estimating recombination rates from population genetic data  
 > Currently, there are several popular softwares to calculate recombination rates which like [FastEPRR](http://www.picb.ac.cn/evolgen/softwares/FastEPRR.html), [LDhat](https://github.com/auton1/LDhat), and [MLrho](http://guanine.evolbio.mpg.de/mlRho/). Here, i will take the FastEPRR as example. For the detail introduction see [here](http://www.picb.ac.cn/evolgen/softwares/download/FastEPRR/FastEPRR2.0/FastEPRR_manual.pdf). Mainly include three steps, and before you need know your genotype was phased or not. if not, and you need to phase before running. Here, i using the [beagle](https://faculty.washington.edu/browning/beagle/beagle.html) for imputation and phased see following the details.
 
-```
+```R
 $ java -jar beagle.11Mar19.69c.jar gt=pop.recode.vcf.gz out=pop.phased.vcf.gz
 ```
 > If your genotype already phased and impution, i wrote a perl script for get the data format for FastEPRR format from your vcf genotype file.
  
-```
+```R
 $ perl get.FastEPRR.pl -vcf pop.recode.vcf -out pop.phased.vcf 
 ```
 
 > Make sure your chromesome in your vcf files AS numeric. If not, you can run a one liner perl for changing the string to numeric, as like:
 
-```
+```R
 $ less *.vcf |perl -ne 'chomp;if(/#/){print "$_\n"}else{($chr,$all)=split/\s+/,$_,2;$chr=~s/chr(any type in your file to replace)//g;print "$chr\t$all\n"}' > pop.vcf
 ```
 
 > The FastEPRR can run single chromesome only, so you have to split your vcf genotype file to couples of vcf files. Here was my demo. Split it by vcftools super convenient in one liner command.
    
-```
+```R
 $ less list(a chromesome list for your specie) |perl -ne 'chomp;`vcftools --vcf pop.vcf --chr $_ --recode --out pop.$_.vcf.gz && gzip pop.$_.vcf.gz`'
 ```
 
@@ -158,7 +158,7 @@ $ locuszoom --metal chr5_135426027.metal --refsnp chr5:135426027 --flank 20MB  -
 
 > Here, you need install the [BEDOPS](https://bedops.readthedocs.io/en/latest/index.html) to convert any type your file format to the [bed format](http://genome.ucsc.edu/FAQ/FAQformat.html#format1.7). Or you only need to prepare your data frame with: chr, start, end, name (type: exon, CDS and gene ETC), score, strand, thickStart, thickEnd and itemRgb (YOUR name color, here, I make a change that according to your name which will make a random color (from the [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html)  and will add the [ggsci](https://nanx.me/ggsci/articles/ggsci.html) for your name in locuszoom.R ) SO, you only need to prepare the above first four data frame is enough. Otherwhise, I also CHANGED the gene text color (LOL). If you want to keep the same as the orignal locuszoom color, you just change the default.args for locuszoom [options](https://genome.sph.umich.edu/wiki/LocusZoom_Standalone).
 
-```
+```R
 $ gff2bed < ref.gff > ref.bed && perl get.bed.pl -bed ref.bed -out ref.flab.bed
 $locuszoom --metal HORVU7Hr1G119370.meta --refsnp chr2:14981819 --flank 8MB  --build by38 --pop BARLEY --source 1000G_July2019 --no-cleanup --snpset SNP_density --bed-tracks ../examples/ref.flab.bed legend='right'
 ```
@@ -167,13 +167,13 @@ $locuszoom --metal HORVU7Hr1G119370.meta --refsnp chr2:14981819 --flank 8MB  --b
 
 ![HORVU7Hr1G119370](/images/Blog/eQTL/chr2_6981819-22981819_bed.png "HORVU7Hr1G119370")
 
-```
+```R
 $locuszoom --metal AGP50763.metal --refsnp chr4:578203670 --flank 20MB  --build bl38 --pop BARLEY --source 1000G_August2019 --no-cleanup  --snpset SNP_density --bed-tracks ../examples/ref.flab.bed legend='right'
 ```
 
 ![AGP50763](/images/Blog/eQTL/1.png "AGP50763")
 
-```
+```R
 $ locuszoom --metal HORVU0Hr1G000410.metal --refsnp chr3:641835852 --flank 20MB  --build bl38 --pop BARLEY --source 1000G_August2019 --no-cleanup  --snpset SNP_density --bed-tracks ../examples/ref.flab.bed legend='right'
 ```
 
