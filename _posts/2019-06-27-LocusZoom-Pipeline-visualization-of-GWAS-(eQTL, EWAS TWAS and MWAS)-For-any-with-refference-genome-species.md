@@ -30,7 +30,7 @@ tags: [Data visualization, GWAS, eQTL]
 
 > The [refFlat](https://genome-source.gi.ucsc.edu/gitlist/kent.git/raw/master/src/hg/lib/refFlat.as) table mirrors what is currently supplied by the UCSC database, [format](https://genome-source.gi.ucsc.edu/gitlist/kent.git/raw/master/src/hg/lib/refFlat.as). You need to qsub my Pipeline, cause it will take a while for get the reffalt table, if your species with a big reference genome, then will take more time to get the data result. my demo was the  [barley](ftp://ftp.ensemblgenomes.org/pub/plants/release-44/gff3/hordeum_vulgare) specie and needs more than five hours for now. And i will add a simple that get the refflab quickly than this pipeline times in the futher in Python Script.
 
-```linux
+```
 # Pipeline Usage
 
 $ perl refflat.pipeline.pl
@@ -52,18 +52,18 @@ Usage:
 ```
 #### QUEUE THE Pipeline 
 
-```linux
+```
 $ nohup qsub perl refflat.pipeline.pl -chrlist ref.chrlist -gff ref.gff3 -vcf pop.recode.vcf -out ./ &
 ```
 > or (which running local node in your machine)
 
-```linux
+```
 $ nohup perl refflat.pipeline.pl -chrlist ref.chrlist -gff ref.gff3 -vcf pop.recode.vcf -out ./ &
 ```
 
 > or a new simplest way to get the reflattable, just using convert command  lines
 
-```linux
+```
 
 
 ```
@@ -71,7 +71,7 @@ $ nohup perl refflat.pipeline.pl -chrlist ref.chrlist -gff ref.gff3 -vcf pop.rec
 >The pipeline will generate snp.pos, snp.set and refflat.tbale files for you to build YOUR database, excuting as following, and for details click [here](https://genome.sph.umich.edu/wiki/LocusZoom_Standalone).
 
 
-```linux
+```
 $ python dbmeister.py --db locuszoom_bl38.db --snp_pos snp.pos  
 $ python dbmeister.py --db locuszoom_bl38.db --refflat refflat.table  
 $ python dbmeister.py --db locuszoom_bl38.db --snp_set snp.set
