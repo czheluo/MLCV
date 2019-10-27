@@ -165,7 +165,7 @@ $locuszoom --metal HORVU7Hr1G119370.meta --refsnp chr2:14981819 --flank 8MB  --b
 
 > LocusZoom plot for barley eQTL(chr2:14981819) regional result with gene: HORVU7Hr1G119370 8Mb window size
 
-![HORVU7Hr1G119370](/images/Blog/eQTL/chr2_6981819-22981819_bed.png "HORVU7Hr1G119370")
+![HORVU7Hr1G119370](/images/Blog/eQTL/chr5_105426027-165426027-1.png "HORVU7Hr1G119370")
 
 ```R
 $locuszoom --metal AGP50763.metal --refsnp chr4:578203670 --flank 20MB  --build bl38 --pop BARLEY --source 1000G_August2019 --no-cleanup  --snpset SNP_density --bed-tracks ../examples/ref.flab.bed legend='right'
