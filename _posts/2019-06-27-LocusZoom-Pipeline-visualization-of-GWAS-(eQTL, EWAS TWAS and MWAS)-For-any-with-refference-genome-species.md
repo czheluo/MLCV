@@ -100,11 +100,12 @@ $ less *.vcf |perl -ne 'chomp;if(/#/){print "$_\n"}else{($chr,$all)=split/\s+/,$
 ```
 $ less list(a chromesome list for your specie) |perl -ne 'chomp;`vcftools --vcf pop.vcf --chr $_ --recode --out pop.$_.vcf.gz && gzip pop.$_.vcf.gz`'
 ```
+
 > After get all chrs vcf files, you just can run my R pipeline code as following : 
-```
+
+```R
 $ See the usage first!
 $ Rscipt rho.R 
-
 Usage: rho.R [-[-input|i] <character>] [-[-output|o]] [-[-wl|l] <character>] [-[-wd|d] <character>] [-[-nj|n] <character>] [-[-cj|c] <character>] [-[-set|s] <character>] [-[-help|h]]
 Usage example:
       Usage example:
@@ -118,7 +119,6 @@ Usage example:
       --cj currently run job (default 1, and must less than job number value)
       --set Rho values of training set (default :0.0, 0.5, 1.0, 2.0, 5.0,  10.0,  20.0,  40.0,  70.0,  110.0,  170.0)
       --help            usage
-
 $ nohup Rscript rho.R --input ./ --output result &
 ```
 
@@ -126,26 +126,27 @@ $ nohup Rscript rho.R --input ./ --output result &
 ![FastEPRR](/images/Blog/eQTL/FastEPRR.png "FastEPRR")
 >Then you need run the perl script that following to get result, but not the last, you need add the cm_pos from your population genetic map. If not, you only need add additional column as the fourth (whatever you want), and then add it to your database.
 
-```
+```R
 $ perl get.gasteprr.result.pl -int ./ -out fasteprr.result
 $ perl get.rho.result.pl -result fasteprr.result -vcf pop.recode.vcf -out recomb_rate.table
 ```
 
-```
+```R
 $ python dbmeister.py --db barley.db --recomb_rate recomb_rate.table 
 ```
 
 > If you got Error: file recomb_rate.table does not have the proper number of columns (or your delimiter is incorrect.). Here was what problems i met that i already change the dbmeister.py delim for fit the format from my Perl pipeline result.
  
-```
+```R
 $ less recomb_rate.table |sed 's/\s/\t/g' > recomb_rate.delimiter.table && python dbmeister.py --db barley.db --recomb_rate recomb_rate.delimiter.table
 ```
+
 ### Optimization your own plot
 > Which the althor already provided mutiple [LocusZoom options](https://genome.sph.umich.edu/wiki/LocusZoom_Standalone) for what you want to change the Figs. But those not for mine. So i have made slightly changed in locuszoom.R and the details as following.
 
 > I have changed the output Figure for both PDF and PNG , and also the set color which will generate a random color (from the [RColorBrewer](https://cran.r-project.org/web/packages/RColorBrewer/index.html)  and will add the [ggsci](https://nanx.me/ggsci/articles/ggsci.html)) for snpset in locuszoom.R.
-> 
-```
+
+```R
 $ locuszoom --metal chr5_135426027.metal --refsnp chr5:135426027 --flank 20MB  --build by38 --pop BARLEY --source 1000G_July2019 --no-cleanup  --delim space --snpset SNP_density
 # --snpset args (the name in your db snp_set name)
 ```
