@@ -144,3 +144,5 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
      # layout: single
      # author_profile: true
      # read_time: true
+
+theme: jekyll-theme-cayman
